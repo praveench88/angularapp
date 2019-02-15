@@ -1,0 +1,155 @@
+
+<div class="container bootstrap snippet">
+  <div class="row">
+    <div class="col-sm-10"><h1>Customer Profile</h1></div>
+    <!-- <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a>
+    </div> -->
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <!--left col-->
+      <div class="text-center">
+        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Upload a different photo...</h6>
+        <input type="file" class="text-center center-block file-upload">
+      </div></hr><br>
+    </div><!--/col-3-->
+    <div class="col-sm-9">
+      <div class="tab-content">
+
+
+        <form class="form"  id="registrationForm">
+          <div class="form-group">
+            <tr>
+              <div class="col-xs-6">
+                <label for="first_name"><h4>First name</h4></label>
+
+                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name"  ng-model="vm.userData.FirstName" title="enter your first name" required>
+
+
+                <span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block">First name is required</span>
+              </div>
+          </div>
+          <div class="form-group">
+
+            <div class="col-xs-6">
+              <label for="last_name"><h4>Last name</h4></label>
+
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" ng-model="vm.userData.LastName" title="enter your last name if any." required />
+
+              <span ng-show="form.lastName.$dirty && form.lastName.$error.required" class="help-block">Last name is required</span>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <div class="col-xs-6">
+              <label for="phone"><h4>Phone</h4></label>
+
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any."
+                     ng-model="vm.userData.ContactNumber" ng-pattern="/^[(]{0,1}[0-9]{3}[)\.\- ]{0,1}[0-9]{3}[\.\- ]{0,1}[0-9]{4}$/;" maxlength="10" required />
+              <div ng-messages="form.phone.$error">
+                <!--<div ng-messages="form.phone.$error.minlength">
+    <div ng-messages="form.phone.$error.maxlength">-->
+                <div ng-messages="form.phone.$error.pattern">
+                  <div ng-message="required">This field is required</div>
+                  <div ng-message="phone">Enter your valid phone number</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="form-group">
+
+            <div class="col-xs-6">
+              <label for="email"><h4>Email</h4></label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com"  title="enter your email." ng-model="vm.userData.LoginId" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;" required>
+            </div>
+          </div>
+          <div class="form-group">
+
+            <div class="col-xs-6">
+              <label for="text"><h4>Address Line1</h4></label>
+
+
+              <input type="text" class="form-control" id="location" placeholder="somewhere" ng-model="vm.userData.AddressLine1" title="enter a location" required>
+              <span ng-show="form.AddressLine1.$dirty && form.AddressLine1.$error.required" class="help-block">Address is required</span>
+
+            </div>
+            <div class="col-xs-6">
+              <label for="text"><h4>Address Line2</h4></label>
+
+              <input type="text" class="form-control" id="location" placeholder="somewhere" title="enter a location" ng-model="vm.userData.AddressLine2">
+              <span ng-show="form.AddressLine2.$dirty && form.AddressLine2.$error.required" class="help-block">Address is required</span>
+
+            </div>
+            <div class="col-xs-6">
+              <label for="text"><h4>City</h4></label>
+
+              <input type="text" class="form-control" id="City" placeholder="City" title="enter a City" ng-model="vm.userData.City" required>
+              <span ng-show="form.City.$dirty && form.City.$error.required" class="help-block">City is required</span>
+
+            </div>
+
+            <div class="col-xs-6">
+              <label for="text"><h4>State</h4></label>
+
+              <input type="text" class="form-control" id="State" placeholder="State" title="enter a State" ng-model="vm.userData.State" required>
+              <span ng-show="form.State.$dirty && form.State.$error.required" class="help-block">State is required</span>
+
+            </div>
+
+            <div class="col-xs-6">
+              <label for="text"><h4>Country</h4></label>
+
+              <input type="text" class="form-control" id="Country" placeholder="Country" title="enter a Country" ng-model="vm.userData.Country" required>
+              <span ng-show="form.Country.$dirty && form.Country.$error.required" class="help-block">Country is required</span>
+
+            </div>
+
+            <div class="col-xs-6">
+              <label for="text"><h4>Zipcode</h4></label>
+
+              <input type="text" class="form-control" id="ZIPCode" placeholder="ZIPCode" title="enter a ZIPCode" ng-model="vm.userData.ZIPCode" maxlength="6" required>
+              <span ng-show="form.ZipCode.$dirty && form.ZipCode.$error.required" class="help-block">ZipCode is required</span>
+
+            </div>
+
+
+          </div>
+
+          <div class="form-group">
+            <div class="col-xs-12 btnbottom">
+              <br>
+
+
+              <!--<button class="btn btn-lg btn-success" type="submit" ng-click="vm.userProfile()"><i class="glyphicon glyphicon-ok-sign"></i> Update</button>-->
+              <!--<button  class="btn btn-lg btn-success"  ng-click="vm.edituserProfile()">UPDATE</button>-->
+
+              <button  class="btn success"  ng-click="vm.userProfile()">Update</button>
+
+
+
+              
+<div class="alert alert-success m-t-20" id="updateSuccess">
+  <strong>Success!</strong> User Profile updated.
+</div>
+<div class="alert alert-warning m-t-20" id="updateFailure">
+  <strong>Warning!</strong> User Profile not updated.
+</div>
+            </div>
+          </div>
+
+          </tr>
+        </form>
+
+
+      </div><!--/tab-content-->
+    </div><!--/col-9-->
+  </div><!--/row-->
+
+  </div>
+
