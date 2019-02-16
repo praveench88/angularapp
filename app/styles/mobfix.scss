@@ -106,9 +106,10 @@ p {
 }
 
 .logo {
-  height: 115px;
-  margin-top: -30px;
-  width: 215px;
+  height: 60px;
+  margin-top: 1px;
+  width: 99px;
+  margin-left: 60px;
 }
 
 .companyh3 {
@@ -482,11 +483,10 @@ li a:hover {
 }
 
 .hr1 {
-margin-top: 0px;
-    padding: 5px;
+  margin-top: -8px;
   margin-bottom: 0px;
-  width: 930px;
-  margin-left: 16px;
+  width: 752px;
+  margin-left: 198px;
   border: 0;
   float: left;
   border-top: 2px solid #eee;
@@ -501,12 +501,10 @@ margin-top: 0px;
   list-style-type: none;
   display: flex;
   margin-top: 15px;
-  position:absolute;
-  left:20%;
 }
 
 .navmailid {
-  margin-left: -68px;
+  margin-left: -15px;
 }
 
 .navemail {
@@ -709,7 +707,13 @@ margin-top: 0px;
 
 .headerdropdown {
   margin-top: -14px;
-  margin-left:39px;
+  margin-left: 90px;
+}
+
+.navemail1 {
+  color: black;
+  padding-left: 16px;
+  margin-left: -19px;
 }
 
 @media screen and (min-width: 768px)and (max-width:1023px) {
@@ -818,18 +822,19 @@ margin-top: 0px;
   }
 
   .logo {
-    height: 115px;
-    margin-top: -30px;
-    width: 187px;
-    margin-left: -53px;
+    height: 39px;
+    margin-top: 5px;
+    width: 73px;
+    margin-left: 31px;
   }
+  .navemail{margin-left:-18px;}
 
   .navphone {
-    margin-left: -74px;
+    margin-left: -47px;
   }
 
   .vendorlog {
-    margin-left: 213px;
+    margin-left: 196px;
   }
 
   .HeaderLogin {
@@ -843,8 +848,8 @@ margin-top: 0px;
   .hr1 {
     margin-top: -8px;
     margin-bottom: 0px;
-    width: 691px;
-    margin-left: 16px;
+    width: 565px;
+    margin-left: 120px;
     border: 0;
     float: left;
     border-top: 2px solid #eee;
@@ -857,8 +862,8 @@ margin-top: 0px;
   }
 
   .cartdiv {
-    margin-top: 15px;
-    margin-left: 32px;
+    margin-top: 12px;
+    margin-left: 14px;
   }
 
   .carousel {
@@ -881,6 +886,18 @@ margin-top: 0px;
   .headerdropdown {
     margin-top: -14px;
     margin-left: 190px;
+  }
+
+  .carousel-indicators1 {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    text-align: center;
+    display: inline-table;
   }
 }
 
@@ -973,7 +990,8 @@ margin-top: 0px;
   }
 
   .cartdiv {
-    margin-top: 15px;
+    margin-top: 14px;
+    margin-left: -33px;
   }
 
   .cartdiv > a:hover {
@@ -992,17 +1010,17 @@ margin-top: 0px;
   }
 
   .logo {
-    height: 115px;
-    margin-top: -30px;
-    width: 215px;
-    margin-left: -58px;
+    height: 60px;
+    margin-top: 1px;
+    width: 90px;
+    margin-left: 32px;
   }
 
   .hr1 {
-    margin-top: -10px;
+    margin-top: -11px;
     margin-bottom: 0px;
-    width: 923px;
-    margin-left: 16px;
+    width: 772px;
+    margin-left: 145px;
     border: 0;
     float: left;
     border-top: 2px solid #eee;
@@ -1015,6 +1033,14 @@ margin-top: 0px;
   .headerdropdown {
     margin-top: -14px;
     margin-left: 215px;
+  }
+
+  .navmailid {
+    margin-left: -32px;
+  }
+
+  .navphone1 {
+    margin-left: -18px;
   }
 }
 
@@ -1170,7 +1196,7 @@ margin-top: 0px;
   .navbar-default .navbar-form {
     border-color: #cfb65e;
     margin-top: 0px;
-    margin-left: -28px;
+    margin-left: 0px;
   }
 
   .background {
@@ -1351,10 +1377,10 @@ margin-top: 0px;
   }
 
   .logo {
-    height: 86px;
-    margin-top: -6px;
-    width: 135px;
-    margin-left: -21px;
+    height: 38px;
+    margin-top: 20px;
+    width: 54px;
+    margin-left: 21px;
   }
 
   .whyblacyimg {
@@ -1385,8 +1411,8 @@ margin-top: 0px;
 
   .navbar-right {
     float: left !important;
-    margin-left: -12px;
-    margin-top: 0px;
+    margin-left: -91px;
+    margin-top: 31px;
     display: flex;
   }
 
@@ -1428,7 +1454,8 @@ margin-top: 0px;
   }
 
   .vendorlog {
-    margin-left: 81px;
+    margin-left: 152px;
+    margin-top: -33px;
   }
 
   .mobifixsmart {
@@ -1436,10 +1463,26 @@ margin-top: 0px;
     margin-top: 18px;
   }
 
+  .HeaderLogin1 {
+    margin-top: -32px
+  }
+
   .headerdropdown {
     margin-top: -11px;
-    margin-left: 16px;
+    margin-left: 48px;
   }
+
+  .glyphicon {
+    color: black;
+    margin-top: 1px;
+    margin-left: 2px;
+  }
+
+.headerli{
+  margin-left: 44px;
+  margin-top: -33px;
+ }
+.headerli1{margin-left:44px;}
 }
 
 @media screen and (min-width: 1300px)and (max-width:2020px) {
@@ -1454,7 +1497,7 @@ margin-top: 0px;
 
   .cartdiv {
     margin-top: 15px;
-    margin-left: 81px;
+    margin-left: 43px;
   }
 
   .cartdiv > a:hover {
@@ -1463,18 +1506,21 @@ margin-top: 0px;
 
 
   .hr1 {
+    margin-top: -12px;
     margin-bottom: 0px;
-    width: 1052px;
-    margin-left: -11px;
+    width: 810px;
+    margin-left: 178px;
     border: 0;
     float: left;
     border-top: 2px solid #eee;
   }
 
   .navmailid {
-    margin-left: -68px;
+    margin-left: -35px;
   }
-
+  .navphone1 {
+    margin-left: -15px;
+  }
   .navemail {
     color: black;
     padding-left: 16px;
@@ -1494,7 +1540,7 @@ margin-top: 0px;
 
   .navbar-right {
     float: left !important;
-    margin-left: 145px;
+    margin-left: 130px;
     margin-top: -31px;
   }
 
@@ -1512,10 +1558,10 @@ margin-top: 0px;
   }
 
   .logo {
-    height: 115px;
-    margin-top: -30px;
-    width: 230px;
-    margin-left: -23px;
+    height: 60px;
+    margin-top: 1px;
+    width: 99px;
+    margin-left: 60px;
   }
 
   .borderh1 {
@@ -1586,12 +1632,12 @@ margin-top: 0px;
     width: 1346px;
     margin-left: -119px;
   }
+
   .headerdropdown {
     margin-top: -14px;
     float: right;
     margin-left: 272px;
   }
-
 }
 
 
@@ -1797,37 +1843,49 @@ input[type="search"] {
 .trackimg {
   width: 100%
 }
+
 .Statuswidth {
   height: 120px;
   padding-top: 20px;
   text-align: center;
   margin-top: -19px;
-  margin-left:30px;
+  margin-left: 30px;
 }
-.statuswidth1{width:1105px;}
+
+.statuswidth1 {
+  width: 1105px;
+}
+
 .ordertrackingcontent {
   color: #cfb65e;
   font-size: 16px;
   margin-left: 22px;
   font-weight: bold;
 }
+
 .contentp2 {
   text-align: justify;
   color: black;
   margin-top: 10px;
 }
+
 .headingh41 {
   text-align: left;
   font-weight: bold;
-  font-size: 18px;  
+  font-size: 18px;
 }
-.termslist{list-style-type:circle;}
+
+.termslist {
+  list-style-type: circle;
+}
+
 .contentp3 {
   text-align: justify;
   color: black;
   font-weight: 500;
   font-size: 16px;
 }
+
 @media screen and (min-width: 1024px)and (max-width:1039px) {
   .Statustext {
     border: 1px solid #cfb65e;
@@ -1837,6 +1895,7 @@ input[type="search"] {
     margin-left: -69PX;
     color: Black;
   }
+
   .totalspan {
     float: right;
     margin-top: -30px;
@@ -1866,7 +1925,6 @@ input[type="search"] {
     padding: 5px;
     font-size: 13px;
     font-weight: bold;
-
   }
 
   .OrderlbStatusDT {
@@ -1915,7 +1973,7 @@ input[type="search"] {
     font-weight: bold;
     margin-top: 4px;
     margin-right: -12px;
-    color:black;
+    color: black;
     float: right;
   }
 
@@ -2016,6 +2074,7 @@ input[type="search"] {
     margin-right: -12px;
     float: right;
   }
+
   .OrderlabelStatusDT {
     width: 160px;
     height: 35px;
@@ -2679,6 +2738,12 @@ input[type="search"] {
   .BKOicons {
     margin-left: 43px;
   }
+
+  .navemail1 {
+    color: black;
+    padding-left: 16px;
+    margin-left: -19px;
+  }
 }
 
 @media screen and (min-width: 300px)and (max-width:767px) {
@@ -2751,7 +2816,9 @@ input[type="search"] {
     padding-left: 120px;
   }
 
-  .BKOicons1{margin-top:-43px;}
+  .BKOicons1 {
+    margin-top: -43px;
+  }
 }
 
 @media screen and (min-width: 504px) and (max-width:550px) {
@@ -2983,7 +3050,7 @@ input[type="search"] {
   }
 
   .logo {
-    margin-left: -22px;
+    margin-left: 10px;
   }
 
   .footermobfixcompany {
@@ -3058,8 +3125,8 @@ input[type="search"] {
 
   .navbar-right {
     float: left !important;
-    margin-left: -5px;
-    margin-top: 9px;
+    margin-left: 138px;
+    margin-top: -10px;
   }
 
   .whyblacyimg {
@@ -3068,26 +3135,43 @@ input[type="search"] {
     width: 280px;
     margin-left: 200px;
   }
+
   .headerli {
     margin-top: 48px;
-    margin-left: -223px;
+    margin-left: -358px;
   }
+
   .headerli1 {
     margin-top: 13px;
-    margin-left: -223px;
+    margin-left: -358px;
+  }
+
+  .vendorlog {
+    margin-left: -56px;
+  }
+
+  .HeaderLogin {
+    margin-top: 37px;
+  }
+
+  .HeaderLogin1 {
+    margin-top: -32px;
   }
 }
+
 @media screen and (min-width: 720px)and (max-width:740px) {
   .repair_flow {
     position: relative;
     width: 700px;
     margin-left: -36px;
   }
+
   .width {
     width: 100%;
     font-size: 16px;
     margin-left: 0px;
   }
+
   .Bkoimg2 {
     padding-left: 104px;
   }
@@ -3129,6 +3213,7 @@ input[type="search"] {
     margin-left: -63px;
     width: 328px;
   }
+
 }
 
 @media screen and (min-width: 400px)and (max-width: 413px) {
@@ -3162,20 +3247,22 @@ input[type="search"] {
     margin-left: -5px;
   }
 
+
   .Blogh3 {
-    margin-top: 71px;
-    margin-left: -63px;
-    width: 328px;
+    margin-top: 27px;
+    margin-left: -8px;
+    width: 304px;
   }
 
   .Blogh5 {
-    margin-left: -62px;
+    margin-left: -7px;
+    margin-top: -8px;
   }
 
   .Blogsh3 {
-    margin-top: 71px;
-    margin-left: -63px;
-    width: 328px;
+    margin-top: 23px;
+    margin-left: -11px;
+    width: 285px;
   }
 
   .footer-social-icons {
@@ -3196,6 +3283,16 @@ input[type="search"] {
 
   .ABUReadbutton {
     font-size: 16px;
+  }
+
+  .headerli {
+    margin-left: -140px;
+    margin-top: 6px;
+  }
+
+  .headerli1 {
+    margin-left: -140px;
+    margin-top: 6px;
   }
 }
 
@@ -3314,6 +3411,7 @@ input[type="search"] {
   .footer-social-icons3 {
     padding-left: 58px;
   }
+
   .Bkoimg1 {
     padding-left: 14px;
   }
@@ -3334,6 +3432,7 @@ input[type="search"] {
   .width {
     padding-left: 42px;
   }
+
   .repair_flow {
     position: relative;
     width: 410px;
@@ -3724,12 +3823,12 @@ input[type="search"] {
     width: 402px;
     margin-bottom: 20px;
   }
+
   .blockquote {
     border: 2px solid #cfb65e;
     height: 233px;
     width: 268px;
   }
-
 }
 
 @media screen and (min-width: 768px)and (max-width:1023px) {
@@ -3809,8 +3908,9 @@ input[type="search"] {
 
   .blockquote {
     border: 2px solid #cfb65e;
-    height: 233px;
-    width: 248px;
+    height: 245px;
+    width: 215px;
+    margin-left: 8px;
   }
 }
 
@@ -3859,6 +3959,7 @@ input[type="search"] {
     width: auto;
   }
 }
+
 .success {
   color: black;
   background-color: #cfb65e;
@@ -3927,13 +4028,13 @@ input[type="search"] {
   width: 21px;
   height: 20px;
   margin-top: 7px;
-  margin-left: 18px;
+  margin-left: 7px;
 }
 
 .footergplus2 {
   width: 21px;
   height: 23px;
-  margin-top: 7px;
+  margin-top: 6px;
   margin-left: 9px;
 }
 
@@ -3942,7 +4043,7 @@ input[type="search"] {
   list-style-type: none;
   float: left;
   margin-top: 6px;
-  margin-left: -51px;
+  margin-left: -20px;
 }
 
 .container2:hover .ABUReadbutton {
@@ -4022,7 +4123,7 @@ input[type="search"] {
     list-style-type: none;
     float: left;
     margin-top: 6px;
-    margin-left: -32px;
+    margin-left: -20px;
   }
 
   .ABUtext {
@@ -4044,15 +4145,16 @@ input[type="search"] {
     font-weight: bold;
     width: 100%;
   }
+
   .border {
     border-bottom: 1px solid gray;
     width: 97%;
   }
 
-.awidth {
-  width: 100%;
-  margin-top:132px;
-}
+  .awidth {
+    width: 100%;
+    margin-top: 132px;
+  }
 }
 /*Mobile Repair Page*/
 .R-flow {
@@ -4180,7 +4282,11 @@ textarea.form-control {
 .borderleft {
   border-left: 2px solid #eee;
 }
-.pincodegroup{margin-left:8px; font-weight:bold;}
+
+.pincodegroup {
+  margin-left: 8px;
+  font-weight: bold;
+}
 
 .input-group-addon {
   padding: 0px 5px;
@@ -4188,180 +4294,329 @@ textarea.form-control {
 
 .BKOicons1 {
   margin-top: -20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
+
 .finalcost {
   margin-top: -8px;
   width: 100px;
   height: 26px;
 }
-  @media screen and (min-width: 300px)and (max-width:767px) {
-    .padding-rightnone1 {
-      margin-top: 38px;
-    }
 
-    .padding-rightnone2 {
-      margin-top: 28px;
-    }
-
-    .repair_flow {
-      position: relative;
-      width: 410px;
-      margin-left: -85px;
-    }
-
-    .repaircheckout {
-      margin-left: 5px
-    }
-
-    .tblt_cart {
-      max-width: 540px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      margin-right: 0px;
-      width: 362px;
-      margin-top: -19px;
-    }
-
-    .borderleft {
-      border-left: none;
-      border-top: 2px solid #eee;
-      width:auto;
-    }
-
-    textarea.form-control {
-      height: auto;
-      width: 96%;
-    }
-
-    .checkout {
-      border: 1px solid #cfb65e;
-      background-color: #cfb65e;
-      margin-left: 4px;
-      margin-top: 25px;
-      color: black;
-      font-weight: bold;
-      width: 96%;
-    }
-
-    .delivery_Avail {
-      float: right;
-      margin-top: 20px;
-    }
-
-    .border {
-      border-bottom: 1px solid gray;
-      width: 80%;
-    }
-
-    .finalcost {
-      margin-top: -8px;
-      width: 100px;
-      height: 26px;
-      margin-right: 68px;
-    }
-    .width {
-      width: 300px;
-      font-size: 14px;
-      margin-left: -22px;
-    }
-    .Bkoimg2 {
-      margin-left: -9px;
-    }
+@media screen and (min-width: 300px)and (max-width:767px) {
+  .padding-rightnone1 {
+    margin-top: 38px;
   }
 
-  @media screen and (min-width: 768px)and (max-width:1023px) {
-    .tblt_cart {
-      max-width: 100%;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      margin-right: 0px;
-      width: 100%;
-      margin-top: -19px;
-    }
+  .padding-rightnone2 {
+    margin-top: 28px;
+  }
 
-    .border {
-      border-bottom: 1px solid gray;
-      width: 100%;
-    }
-    .borderleft {
-      border-top: 2px solid #eee;
-      border-left:none;
-    }
-    textarea.form-control {
-      height: auto;
-      width: 100%;
-    }
+  .repair_flow {
+    position: relative;
+    width: 410px;
+    margin-left: -85px;
+  }
 
-    .checkout {
-      border: 1px solid #cfb65e;
-      background-color: #cfb65e;
-      margin-left: 4px;
-      margin-top: 10px;
-      width: 100%;
-    }
+  .repaircheckout {
+    margin-left: 5px
+  }
 
-    .Mobfixmobile {
-      color: #cfb65e;
-      font-weight: bold;
-      text-align: center;
-      font-size: 16px;
-      margin-right: 48px;
-      margin-top: 40px;
-    }
-    .Bkoimg1 {
-      height: 120px;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 58px;
-     }
+  .tblt_cart {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    width: 362px;
+    margin-top: -19px;
+  }
+
+  .borderleft {
+    border-left: none;
+    border-top: 2px solid #eee;
+    width: auto;
+  }
+
+  textarea.form-control {
+    height: auto;
+    width: 96%;
+  }
+
+  .checkout {
+    border: 1px solid #cfb65e;
+    background-color: #cfb65e;
+    margin-left: 4px;
+    margin-top: 25px;
+    color: black;
+    font-weight: bold;
+    width: 96%;
+  }
+
+  .delivery_Avail {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .border {
+    border-bottom: 1px solid gray;
+    width: 80%;
+  }
+
+  .finalcost {
+    margin-top: -8px;
+    width: 100px;
+    height: 26px;
+    margin-right: 68px;
+  }
+
+  .width {
+    width: 300px;
+    font-size: 14px;
+    margin-left: -22px;
+  }
+
+  .Bkoimg2 {
+    margin-left: -9px;
+  }
 }
 
-  @media screen and (min-width: 1024px)and (max-width:1039px) {
-    .tblt_cart {
-      max-width: 540px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      margin-right: -70px;
-      width: 313px;
-      margin-top: -19px;
-    }
+@media screen and (min-width: 768px)and (max-width:1023px) {
+  .tblt_cart {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    width: 100%;
+    margin-top: -19px;
+  }
 
-    .checkout {
-      border: 1px solid #cfb65e;
-      background-color: #cfb65e;
-      margin-left: 4px;
-      margin-top: 10px;
-      width: 100%;
-    }
+  .border {
+    border-bottom: 1px solid gray;
+    width: 100%;
+  }
 
-    textarea.form-control {
-      height: auto;
-      width: 100%;
-    }
+  .borderleft {
+    border-top: 2px solid #eee;
+    border-left: none;
+  }
 
-    .border {
-      border-bottom: 1px solid gray;
-      width: 100%;
-    }
+  textarea.form-control {
+    height: auto;
+    width: 100%;
+  }
 
-    .repaircheckout {
-      margin-left: -44px;
-    }
+  .checkout {
+    border: 1px solid #cfb65e;
+    background-color: #cfb65e;
+    margin-left: 4px;
+    margin-top: 10px;
+    width: 100%;
+  }
 
-    .padding-rightnone1 {
-      font-size: 15px;
-      margin-top: -22px;
-    }
- }
-  /*FAQ Page*/
+  .Mobfixmobile {
+    color: #cfb65e;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 48px;
+    margin-top: 40px;
+  }
+
+  .Bkoimg1 {
+    height: 120px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 58px;
+  }
+
+  .whyblacyimg {
+    margin-top: -16px;
+    float: left;
+    width: 427px;
+    margin-left: 111px;
+  }
+
+  .hr2 {
+    border: 1px solid #cfb65e;
+    width: 768px;
+    margin-left: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px)and (max-width:1039px) {
+  .tblt_cart {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-right: -70px;
+    width: 313px;
+    margin-top: -19px;
+  }
+
+  .checkout {
+    border: 1px solid #cfb65e;
+    background-color: #cfb65e;
+    margin-left: 4px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  textarea.form-control {
+    height: auto;
+    width: 100%;
+  }
+
+  .border {
+    border-bottom: 1px solid gray;
+    width: 100%;
+  }
+
+  .repaircheckout {
+    margin-left: -44px;
+  }
+
+  .padding-rightnone1 {
+    font-size: 15px;
+    margin-top: -22px;
+  }
+}
+/*FAQ Page*/
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-left: -1px;
+  width: 405px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-top: -9px;
+  font-family: none;
+}
+
+.active2, .accordion:hover {
+  background-color: white;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #cfb65e;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 25px;
+  margin-top: -9px;
+  left: 15px;
+}
+
+.active2:after {
+  content: "\2212";
+  left: 15px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.thead {
+  border-bottom: 2px solid #cfb65e;
+  background-color: #cfb65e;
+  font-weight: 400;
+  padding: 10px 10px 10px 45px;
+  margin-left: -15px;
+  width: 421px;
+  margin-top: 0px;
+}
+
+.table {
+  width: 45%;
+  margin: 20px 0;
+  border: 1px solid #cfb65e;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.table1 {
+  width: 45%;
+  margin: 20px 0;
+  border: 1px solid #cfb65e;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-left: 40px;
+}
+
+.accordionul {
+  margin-left: -19px;
+}
+
+.accordionli {
+  color: black;
+}
+
+.accordionol {
+  margin-left: -38px;
+}
+
+.faq {
+  margin-top: 10px;
+}
+
+.faqhello {
+  margin-bottom: 20px;
+}
+
+.Oksh3 {
+  color: Black;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+.carousel-inner1 {
+  margin-left: -40px;
+}
+
+
+
+.modalNserver {
+  text-align: left;
+  font-size: 16px;
+}
+
+.whyMobfixp2 {
+  color: black;
+  text-align: left;
+  font-size: 14px;
+}
+
+.hr2 {
+  border: 1px solid #cfb65e;
+  width: 1022px;
+  margin-left: -38px;
+}
+
+.whyMobfixp3 {
+  color: black;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1300px)and (max-width:2020px) {
   .accordion {
     background-color: white;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    margin-left: -1px;
-    width: 405px;
+    margin-left: -3px;
+    width: 499px;
     border: none;
     text-align: left;
     outline: none;
@@ -4371,32 +4626,55 @@ textarea.form-control {
     font-family: none;
   }
 
-  .active2, .accordion:hover {
-    background-color: white;
+
+  .thead {
+    border-bottom: 2px solid #cfb65e;
+    background-color: #cfb65e;
+    font-weight: 400;
+    padding: 10px 10px 10px 45px;
+    margin-left: -15px;
+    width: 511px;
+    margin-top: 0px;
   }
 
-  .accordion:after {
-    content: '\002B';
-    color: #cfb65e;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-    font-size: 25px;
+  .carousel-inner1 {
+    margin-left: -50px;
+  }
+
+  .blockquote {
+    border: 2px solid #cfb65e;
+    height: 195px;
+    margin-left: 6px;
+    width: 375px;
+  }
+
+  .modalNserver {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .hr2 {
+    border: 1px solid #cfb65e;
+    width: 1231px;
+    margin-left: -76px;
+  }
+}
+
+@media screen and (min-width: 768px)and (max-width:1023px) {
+  .accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: -4px;
+    width: 324px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
     margin-top: -9px;
-    left: 15px;
-  }
-
-  .active2:after {
-    content: "\2212";
-    left: 15px;
-  }
-
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    font-family: none;
   }
 
   .thead {
@@ -4405,12 +4683,12 @@ textarea.form-control {
     font-weight: 400;
     padding: 10px 10px 10px 45px;
     margin-left: -15px;
-    width: 421px;
+    width: 337px;
     margin-top: 0px;
   }
 
   .table {
-    width: 45%;
+    width: 47%;
     margin: 20px 0;
     border: 1px solid #cfb65e;
     border-top-right-radius: 4px;
@@ -4418,255 +4696,87 @@ textarea.form-control {
   }
 
   .table1 {
-    width: 45%;
+    width: 47%;
     margin: 20px 0;
     border: 1px solid #cfb65e;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     margin-left: 40px;
   }
+}
 
-  .accordionul {
-    margin-left: -19px;
-  }
-
-  .accordionli {
-    color: black;
-  }
-
-  .accordionol {
-    margin-left: -38px;
-  }
-
-  .faq {
-    margin-top: 10px;
-  }
-
-  .faqhello {
-    margin-bottom: 20px;
-  }
-
-  .Oksh3 {
-    color: Black;
-    font-weight: bold;
+@media screen and (min-width: 300px)and (max-width:767px) {
+  .accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: -5px;
+    width: 277px;
+    border: none;
     text-align: left;
+    outline: none;
     font-size: 16px;
+    transition: 0.4s;
+    margin-top: -9px;
+    font-family: none;
   }
 
-  .carousel-inner1 {
-    margin-left: -40px;
+  .thead {
+    border-bottom: 2px solid #cfb65e;
+    background-color: #cfb65e;
+    font-weight: 400;
+    padding: 10px 10px 10px 45px;
+    margin-left: -15px;
+    width: 288px;
+    margin-top: 0px;
   }
 
-
-
-  .modalNserver {
-    text-align: left;
-    font-size: 16px;
+  .table {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #cfb65e;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
   }
 
-  .whyMobfixp2 {
-    color: black;
-    text-align: left;
-    font-size: 14px;
+  .table1 {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #cfb65e;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
   }
 
   .hr2 {
     border: 1px solid #cfb65e;
-    width: 1022px;
-    margin-left: -38px;
+    width: 293px;
+    margin-left: 0px;
   }
 
-  .whyMobfixp3 {
+  .faq {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 768px)and (max-width:1023px) {
+  .whyblacyimg1 {
+    margin-left: 55px;
+  }
+
+  .subcribe {
+    border: 1px solid white;
+    width: 210px;
+  }
+  
+  .subscribebutton {
+    float: none;
+    background-color: #cfb65e;
     color: black;
-    text-align: right;
-    font-size: 14px;
+    margin-left: 0px;
+    font-size: 16px;
     font-weight: bold;
+    width: 84px;
+    margin-top: -1px;
   }
-
-  @media screen and (min-width: 1300px)and (max-width:2020px) {
-    .accordion {
-      background-color: white;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      margin-left: -3px;
-      width: 499px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 16px;
-      transition: 0.4s;
-      margin-top: -9px;
-      font-family: none;
-    }
-
-
-    .thead {
-      border-bottom: 2px solid #cfb65e;
-      background-color: #cfb65e;
-      font-weight: 400;
-      padding: 10px 10px 10px 45px;
-      margin-left: -15px;
-      width: 511px;
-      margin-top: 0px;
-    }
-
-    .carousel-inner1 {
-      margin-left: -50px;
-    }
-
-    .blockquote {
-      border: 2px solid #cfb65e;
-      height: 195px;
-      margin-left: 6px;
-      width: 375px;
-    }
-
-    .modalNserver {
-      text-align: left;
-      font-size: 16px;
-    }
-
-    .hr2 {
-      border: 1px solid #cfb65e;
-      width: 1231px;
-      margin-left: -76px;
-    }
-  }
-
-  @media screen and (min-width: 768px)and (max-width:1023px) {
-    .accordion {
-      background-color: white;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      margin-left: -4px;
-      width: 324px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 16px;
-      transition: 0.4s;
-      margin-top: -9px;
-      font-family: none;
-    }
-
-    .thead {
-      border-bottom: 2px solid #cfb65e;
-      background-color: #cfb65e;
-      font-weight: 400;
-      padding: 10px 10px 10px 45px;
-      margin-left: -15px;
-      width: 337px;
-      margin-top: 0px;
-    }
-
-    .table {
-      width: 47%;
-      margin: 20px 0;
-      border: 1px solid #cfb65e;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 4px;
-    }
-
-    .table1 {
-      width: 47%;
-      margin: 20px 0;
-      border: 1px solid #cfb65e;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 4px;
-      margin-left: 40px;
-    }
-  }
-
-  @media screen and (min-width: 300px)and (max-width:767px) {
-    .accordion {
-      background-color: white;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      margin-left: -5px;
-      width: 277px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 16px;
-      transition: 0.4s;
-      margin-top: -9px;
-      font-family: none;
-    }
-
-    .thead {
-      border-bottom: 2px solid #cfb65e;
-      background-color: #cfb65e;
-      font-weight: 400;
-      padding: 10px 10px 10px 45px;
-      margin-left: -15px;
-      width: 288px;
-      margin-top: 0px;
-    }
-
-    .table {
-      width: 100%;
-      margin: 20px 0;
-      border: 1px solid #cfb65e;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 4px;
-    }
-
-    .table1 {
-      width: 100%;
-      margin: 20px 0;
-      border: 1px solid #cfb65e;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 4px;
-    }
-
-    .hr2 {
-      border: 1px solid #cfb65e;
-      width: 293px;
-      margin-left: 0px;
-    }
-
-    .faq {
-      margin-top: 25px;
-    }
-  }
-
-  @media screen and (min-width: 768px)and (max-width:1023px) {
-    .whyblacyimg1 {
-      margin-left: 55px;
-    }
-
-    .subcribe {
-      border: 1px solid white;
-      width: 210px;
-    }
-
-    .subscribebutton {
-      float: none;
-      background-color: #cfb65e;
-      color: black;
-      margin-left: 0px;
-      font-size: 16px;
-      font-weight: bold;
-      width: 84px;
-      margin-top: -1px;
-    }
-  }
-.couponSuccess{
-  color:green;
-
-}
-.couponFailure{
-  color:red;
-}
-.m-r-10{
-  margin-right:30px;
-}
-.couponApply{
-  color:blue;
-}
-.coupon{
-  cursor:pointer;
 }

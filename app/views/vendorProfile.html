@@ -38,7 +38,7 @@
 
             <div class="col-xs-6">
               <label for="phone"><h4>Phone</h4></label>
-              <input type="number" class="form-control" name="phone" id="phone" placeholder="enter phone"  value="{{vendorProfileData.ContactNumber}}" title="enter your phone number if any." ng-model="phone" maxlength="10" ng-pattern="/^[0-9]{1,7}$/"  required>>
+              <input type="number" class="form-control" name="phone" id="phone" placeholder="enter phone"  value="{{vendorProfileData.ContactNumber}}" title="enter your phone number if any." ng-model="phone" ng-maxlength="10" ng-minlength="10" ng-pattern="/^[0-9]{1,7}$/"  required>>
               <div ng-messages="form.phone.$error">
                 <!--<div ng-messages="form.phone.$error.minlength">
             <div ng-messages="form.phone.$error.maxlength">-->
