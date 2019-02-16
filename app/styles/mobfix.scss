@@ -82,7 +82,7 @@ p {
 }
 
 .glyphicon:hover {
-  color: white;
+  color: black;
   font-family: 'Glyphicons Halflings';
 }
 
@@ -809,6 +809,7 @@ li a:hover {
     margin-left: 11px
   }
 
+
   .footermobfixcompany {
     margin-left: 15px;
   }
@@ -821,11 +822,11 @@ li a:hover {
     margin-left: -16px;
   }
 
-  .logo {
-    height: 39px;
-    margin-top: 5px;
-    width: 73px;
-    margin-left: 31px;
+ .logo {
+    height: 41px;
+    margin-top: 8px;
+    width: 78px;
+    margin-left: 28px;
   }
   .navemail{margin-left:-18px;}
 
@@ -1469,7 +1470,7 @@ li a:hover {
 
   .headerdropdown {
     margin-top: -11px;
-    margin-left: 48px;
+    margin-left: 1px;
   }
 
   .glyphicon {
@@ -1483,6 +1484,10 @@ li a:hover {
   margin-top: -33px;
  }
 .headerli1{margin-left:44px;}
+
+  .menu {
+    margin-left: 23px;
+  }
 }
 
 @media screen and (min-width: 1300px)and (max-width:2020px) {
@@ -3426,7 +3431,7 @@ input[type="search"] {
   }
 
   .Bkoimg2 {
-    padding-left: 23px;
+    padding-left: 30px;
   }
 
   .width {
@@ -4301,6 +4306,7 @@ textarea.form-control {
   margin-top: -8px;
   width: 100px;
   height: 26px;
+  margin-right:-8px;
 }
 
 @media screen and (min-width: 300px)and (max-width:767px) {
@@ -4359,14 +4365,14 @@ textarea.form-control {
 
   .border {
     border-bottom: 1px solid gray;
-    width: 80%;
+    width: 100%;
   }
 
   .finalcost {
     margin-top: -8px;
     width: 100px;
     height: 26px;
-    margin-right: 68px;
+    margin-right: -8px;
   }
 
   .width {
