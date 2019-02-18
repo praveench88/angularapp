@@ -715,7 +715,9 @@ li a:hover {
   padding-left: 16px;
   margin-left: -19px;
 }
-
+.height{height:50%;}
+.color{color:white;}
+.color:hover{color:white;}
 @media screen and (min-width: 768px)and (max-width:1023px) {
   .navbar-default .navbar-nav > li > a {
     color: black;
@@ -822,13 +824,16 @@ li a:hover {
     margin-left: -16px;
   }
 
- .logo {
+  .logo {
     height: 41px;
     margin-top: 8px;
     width: 78px;
     margin-left: 28px;
   }
-  .navemail{margin-left:-18px;}
+
+  .navemail {
+    margin-left: -18px;
+  }
 
   .navphone {
     margin-left: -47px;
@@ -868,8 +873,8 @@ li a:hover {
   }
 
   .carousel {
-    width: 816px;
-    margin-left: -38px;
+    width: 766px;
+    margin-left: -37px;
   }
 
   .carousel-indicators {
@@ -1000,7 +1005,7 @@ li a:hover {
   }
 
   .carousel {
-    width: 1046px;
+    width: 1018px;
     margin-left: -54px;
   }
 
@@ -1634,7 +1639,7 @@ li a:hover {
   }
 
   .carousel {
-    width: 1346px;
+    width: 1347px;
     margin-left: -119px;
   }
 
@@ -1643,6 +1648,14 @@ li a:hover {
     float: right;
     margin-left: 272px;
   }
+
+  .footertwitter {
+    width: 21px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 9px;
+  }
+
 }
 
 
