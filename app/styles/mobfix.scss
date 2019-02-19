@@ -1470,12 +1470,12 @@ li a:hover {
   }
 
   .HeaderLogin1 {
-    margin-top: -32px
+    margin-top: -34px
   }
 
   .headerdropdown {
-    margin-top: -11px;
-    margin-left: 1px;
+    margin-top: -7px;
+    margin-left: 40px;
   }
 
   .glyphicon {
@@ -3177,6 +3177,19 @@ input[type="search"] {
   }
 }
 
+@media screen and (min-width:426px) and (max-width:459px){
+  .navbar-right {
+    float: left !important;
+    margin-left: 100px;
+    margin-top: 31px;
+    display: flex;
+  }
+  .vendorlog {
+    margin-left: -36px;
+    margin-top: -33px;
+  }
+}
+
 @media screen and (min-width: 720px)and (max-width:740px) {
   .repair_flow {
     position: relative;
@@ -3192,6 +3205,11 @@ input[type="search"] {
 
   .Bkoimg2 {
     padding-left: 104px;
+  }
+
+  .headerdropdown {
+    margin-top: -7px;
+    margin-left: -175px;
   }
 }
 
@@ -3215,7 +3233,32 @@ input[type="search"] {
   .footer-social-icons {
     margin-left: 0px;
   }
+  .headerli {
+    margin-left: -131px;
+    margin-top: -4px;
+  }
 
+  .headerli1 {
+    margin-left: -131px;
+    margin-top: 6px;
+  }
+
+  .headerdropdown {
+    margin-top: -7px;
+    margin-left: -131px;
+  }
+
+  .navbar-right {
+    float: left !important;
+    margin-left: 86px;
+    margin-top: 31px;
+    display: flex;
+  }
+
+  .vendorlog {
+    margin-left: -6px;
+    margin-top: -33px;
+  }
   .thead {
     width: 472px;
   }
@@ -3231,7 +3274,6 @@ input[type="search"] {
     margin-left: -63px;
     width: 328px;
   }
-
 }
 
 @media screen and (min-width: 400px)and (max-width: 413px) {
@@ -3264,7 +3306,6 @@ input[type="search"] {
   .imageservices {
     margin-left: -5px;
   }
-
 
   .Blogh3 {
     margin-top: 27px;
@@ -3304,13 +3345,30 @@ input[type="search"] {
   }
 
   .headerli {
-    margin-left: -140px;
-    margin-top: 6px;
+    margin-left: -118px;
+    margin-top: -50px;
   }
 
   .headerli1 {
-    margin-left: -140px;
+    margin-left: -118px;
     margin-top: 6px;
+  }
+  .headerdropdown{
+  margin-top: -7px;
+  margin-left: -118px;
+}
+ .navbar-right {
+    float: left !important;
+    margin-left: 86px;
+    margin-top: 31px;
+    display: flex;
+  }
+  .vendorlog {
+    margin-left: -6px;
+    margin-top: -33px;
+  }
+  .HeaderLogin1 {
+    margin-top: -33px;
   }
 }
 
@@ -4127,10 +4185,14 @@ input[type="search"] {
     margin-left: 93px;
     margin-top: 10px;
   }
-
-
   .whyblacyimg1 {
     margin-left: 0px;
+  }
+  .customerprofile {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
   }
 }
 
