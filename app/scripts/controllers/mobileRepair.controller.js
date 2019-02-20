@@ -76,6 +76,7 @@
               InitialQuote: "",
               EstimatedQuote: "",
               FinalCost: vm.totalprice,
+             // mobilemodel: vm.mobilemodel,
               OrderPlacedDate: "NOW()",
               EstimatedTimetoDeliver: "NOW()" //change
             }
@@ -169,7 +170,8 @@ $('#couponFailure').show()
     function priceCalculation() {
       vm.totalprice = 0;
       vm.issueDetails = $scope.issueprice;
-      vm.phoneissues="";
+      vm.phoneissues = "";
+     // vm.mobilemodel = $scope.model;
       vm.phoneissueid="";
       for (var i = 0; i < vm.issueDetails.length; i++) {
 
@@ -177,13 +179,16 @@ $('#couponFailure').show()
 
           vm.totalprice += vm.issueDetails[i].FinalCost;
           vm.phoneissues += ((vm.phoneissues ? ',' : '') + vm.issueDetails[i].MobileIssue);
-          vm.phoneissueid += ((vm.phoneissueid ? ',' : '') +vm.issueDetails[i].MobileIssuePriceID);
+          vm.phoneissueid += ((vm.phoneissueid ? ',' : '') + vm.issueDetails[i].MobileIssuePriceID);
+          //vm.mobilemodel += vm.mobilemodel[i].mobilemodel;
+
         }
       }
 
       vm.phoneissueid;
       vm.phoneissues;
       vm.totalprice;
+      //vm.mobilemodel;
       
 
     }
