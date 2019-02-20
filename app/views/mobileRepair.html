@@ -110,7 +110,12 @@
         <div class="col-md-4 col-sm-12 col-xs-12 borderleft">
           <div class="tblt_cart">
             <h2 class="Mobfixmobile">
-              Repair List for<br><span class="phone-model">Mobile Brand</span>
+              Repair List for<br><span class="phone-model">
+  <select id="brandId" placeholder="Select Brand" ng-options="x.MobileCompany for x in brand" ng-model="selectedItem" ng-change="selectedItemChanged(selectedItem)" class="form-control required"
+                            style="height: auto">
+    <option value="">Selected Brand</option>
+  </select>
+</span>
             </h2>
             <div class="cart-contain">
               <ul class="list-unstyled">

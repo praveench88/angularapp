@@ -716,8 +716,12 @@ li a:hover {
   margin-left: -19px;
 }
 .height{height:50%;}
-.color{color:white;}
-.color:hover{color:white;}
+.textadress .color1 {
+  color: white;
+}
+.textadress .color1 > a:hover {
+  color: white;
+}
 @media screen and (min-width: 768px)and (max-width:1023px) {
   .navbar-default .navbar-nav > li > a {
     color: black;

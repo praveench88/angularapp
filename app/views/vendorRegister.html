@@ -18,7 +18,7 @@
 
 
 
-        <form class="box SignInformbox" id="vendorregistrationForm">
+        <form class="box SignInformbox" name="myForm" id="vendorregistrationForm">
 
           <div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
             <div class="inner-addon left-addon inputbox col">
@@ -39,15 +39,8 @@
 
           <div class="inner-addon left-addon">
             <i class="glyphicon glyphicon-phone col"></i>
-            <input type="number" name="phone" class="form-control input-borderless" ng-model="vm.ContactNumber" placeholder="Phone" required>
-            <div ng-messages="form.phone.$error">
-              <!--<div ng-messages="form.phone.$error.minlength">
-              <div ng-messages="form.phone.$error.maxlength">-->
-              <div ng-messages="form.phone.$error.pattern">
-                <div ng-message="required">This field is required</div>
-                <div ng-message="phone">Enter your valid phone number</div>
-              </div>
-            </div>
+            <input type="number" name="phone" class="form-control input-borderless" ng-model="vm.ContactNumber" placeholder="Phone" ng-pattern="/^[7-9][0-9]{9}$/" required>
+            <span ng-show="myForm.phone.$error.pattern">Please enter valid number!</span>
           </div>
 
           <div class="inner-addon left-addon">
