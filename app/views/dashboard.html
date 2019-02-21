@@ -9,8 +9,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand p-t-10 p-l-0"><img src="../assets/images/80px.png" class="logo hidden-xs "></a>
-            <a class="navbar-brand p-xs-t-0"><img src="../assets/images/80px_icon.png" class="logo visible-xs"></a>
+            <a class="navbar-brand p-t-10 p-l-0" ui-sref="home" ui-sref-active="active"><img src="../assets/images/80px.png" class="logo hidden-xs "></a>
+            <a class="navbar-brand p-xs-t-0" ui-sref="home" ui-sref-active="active"><img src="../assets/images/80px_icon.png" class="logo visible-xs"></a>
           </div>
           <div class="cartdiv visible-xs"><a href="" class="cartamount"><img src="../assets/images/cart.png" class="cart visible-xs"> (0)</a></div>
 
@@ -18,8 +18,8 @@
           <p class="phoneno visible-xs">+917995063244</p>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar2">
-              <li class="navmailid hidden-sm hidden-xs"><img src="../assets/images/email.png" /><span class="navemail">info@mobfix.co.in</span></li>
-              <li class="navphone hidden-xs"><img src="../assets/images/phone.png" /><span class="navemail navphone1"> +91 79950 63244</span></li>
+              <li class="navmailid hidden-sm hidden-xs"><img class="email1" src="../assets/images/email.png"/><span class="navemail">info@mobfix.co.in</span></li>
+              <li class="navphone hidden-xs"><img class="phone" src="../assets/images/phone.png" /><span class="navemail navphone1"> +91 79950 63244</span></li>
               <ul ng-if="!dashboard.showProfile" class="nav navbar-nav navbar-right">
                 <li class="vendorlog m-r-25" ng-click="dashboard.openvendorLoginModal()"><a id="myBtn"><button type="button" class="HeaderLogin">Vendor LogIn</button> </a></li>
                 <li class="HeaderLogin1" ng-click="dashboard.openloginModal()"><a id="myBtn"><button type="button" class="HeaderLogin">LogIn</button></a></li>
@@ -76,7 +76,7 @@
                 <a ui-sref="blog" ui-sref-active="active">BLOG </a>
               </li>
               <li><a ui-sref="contactUs" ui-sref-active="active">CONTACT US</a></li>
-              <li><div class="cartdiv hidden-xs"><a href="" class="cartamount"><img src="../assets/images/cart.png" class="cart hidden-xs">  (0)</a></div></li>
+              <li><div class="cartdiv hidden-xs"><a href="" class="cartamount"><img src="../assets/images/download.png" class="cart hidden-xs">  (0)</a></div></li>
             </ul>
 
           </div>
@@ -110,7 +110,7 @@
 
           </div>
           <h5 class="okfooter">Phone :<a href="tel:+91 8448282445" class="footerboldh5 color1"> +91 79950 63244</a></h5>
-          <h5 class="okfooter">Email : <a href=""mailto:info@mobifix.co.in class="footerboldh5 color1">info@mobifix.co.in </a></h5>
+          <h5 class="okfooter">Email : <a href="mailto:info@mobfix.co.in" class="footerboldh5 color1">info@mobfix.co.in </a></h5>
         </div>
         <div class="col-sm-3 col-md-3 col-xs-6 footermobfixcompany">
           <h3 class="companyh3">Company</h3>
@@ -143,6 +143,9 @@
             </li>
             <li>
               <a href="/" ui-sref="repair" ui-sref-active="active1"> > Repair</a>
+            </li>
+            <li>
+              <a class="" href="/" ui-sref="status" ui-sref-active="active1"> > Status</a>
             </li>
             <li>
               <a href="/" ui-sref="bookOnline" ui-sref-active="active1"> > Book Online</a>
@@ -187,7 +190,7 @@
         <div class="col-sm-8 col-md-8 col-xs-12 copyright">
           <p>
             © 2018 All Rights Reserved by
-            <a href="#" target="_blank">mobifix.co.in </a>
+            <a href="mailto:info@mobfix.co.in" target="_blank">mobfix.co.in </a>
           </p>
         </div>
         <div class=" col-xs-offset-2 col-xs-7 col-sm-4 col-md-4 ">
