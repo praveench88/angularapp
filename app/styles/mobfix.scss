@@ -4319,6 +4319,7 @@ input[type="search"] {
   font-size: 14px;
   color: black;
   font-weight: 500;
+  margin-left:20px;
 }
 
 .Mobfixmobile {
@@ -4387,379 +4388,242 @@ textarea.form-control {
   height: 26px;
   margin-right:-1px;
 }
-
-@media screen and (min-width: 300px)and (max-width:767px) {
-  .padding-rightnone1 {
-    margin-top: 38px;
+.Brand {
+  height: auto;
+  background: white;
+  border: 1px solid white;
   }
-
-  .padding-rightnone2 {
-    margin-top: 28px;
-  }
-
-  .repair_flow {
-    position: relative;
-    width: 410px;
-    margin-left: -85px;
-  }
-
-  .repaircheckout {
-    margin-left: 5px
-  }
-
-  .tblt_cart {
-    max-width: 540px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-right: 0px;
-    width: 362px;
-    margin-top: -19px;
-  }
-
-  .borderleft {
-    border-left: none;
-    border-top: 2px solid #eee;
-    width: auto;
-  }
-
-  textarea.form-control {
-    height: auto;
-    width: 96%;
-  }
-
-  .checkout {
-    border: 1px solid #cfb65e;
-    background-color: #cfb65e;
-    margin-left: 4px;
-    margin-top: 25px;
-    color: black;
-    font-weight: bold;
-    width: 96%;
-  }
-
-  .delivery_Avail {
-    float: right;
-    margin-top: 20px;
-  }
-
-  .border {
-    border-bottom: 1px solid gray;
-    width: 100%;
-  }
-
-  .finalcost {
-    margin-top: -8px;
-    width: 100px;
-    height: 26px;
-    margin-right: -8px;
-  }
-
-  .width {
-    width: 300px;
-    font-size: 14px;
-    margin-left: -22px;
-  }
-
-  .Bkoimg2 {
-    margin-left: -9px;
-  }
+.select1 {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
 }
 
-@media screen and (min-width: 768px)and (max-width:1023px) {
-  .tblt_cart {
-    max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-right: 0px;
-    width: 100%;
-    margin-top: -19px;
+/* For IE10 */
+.select1::-ms-expand {
+  display: none;
+}
+  @media screen and (min-width: 300px)and (max-width:767px) {
+    .padding-rightnone1 {
+      margin-top: 38px;
+    }
+
+    .padding-rightnone2 {
+      margin-top: 28px;
+    }
+
+    .repair_flow {
+      position: relative;
+      width: 410px;
+      margin-left: -85px;
+    }
+
+    .repaircheckout {
+      margin-left: 5px
+    }
+
+    .tblt_cart {
+      max-width: 540px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-right: 0px;
+      width: 362px;
+      margin-top: -19px;
+    }
+
+    .borderleft {
+      border-left: none;
+      border-top: 2px solid #eee;
+      width: auto;
+    }
+
+    textarea.form-control {
+      height: auto;
+      width: 96%;
+    }
+
+    .checkout {
+      border: 1px solid #cfb65e;
+      background-color: #cfb65e;
+      margin-left: 4px;
+      margin-top: 25px;
+      color: black;
+      font-weight: bold;
+      width: 96%;
+    }
+
+    .delivery_Avail {
+      float: right;
+      margin-top: 20px;
+    }
+
+    .border {
+      border-bottom: 1px solid gray;
+      width: 100%;
+    }
+
+    .finalcost {
+      margin-top: -8px;
+      width: 100px;
+      height: 26px;
+      margin-right: -8px;
+    }
+
+    .width {
+      width: 300px;
+      font-size: 14px;
+      margin-left: -22px;
+    }
+
+    .Bkoimg2 {
+      margin-left: -9px;
+    }
   }
 
-  .border {
-    border-bottom: 1px solid gray;
-    width: 100%;
+  @media screen and (min-width: 768px)and (max-width:1023px) {
+    .tblt_cart {
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-right: 0px;
+      width: 100%;
+      margin-top: -19px;
+    }
+
+    .border {
+      border-bottom: 1px solid gray;
+      width: 100%;
+    }
+
+    .borderleft {
+      border-top: 2px solid #eee;
+      border-left: none;
+    }
+
+    textarea.form-control {
+      height: auto;
+      width: 100%;
+    }
+
+    .checkout {
+      border: 1px solid #cfb65e;
+      background-color: #cfb65e;
+      margin-left: 4px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .Mobfixmobile {
+      color: #cfb65e;
+      font-weight: bold;
+      text-align: center;
+      font-size: 16px;
+      margin-right: 48px;
+      margin-top: 40px;
+    }
+
+    .Bkoimg1 {
+      height: 120px;
+      padding-top: 20px;
+      text-align: center;
+      margin-left: 58px;
+    }
+
+    .whyblacyimg {
+      margin-top: -16px;
+      float: left;
+      width: 427px;
+      margin-left: 111px;
+    }
+
+    .hr2 {
+      border: 1px solid #cfb65e;
+      width: 768px;
+      margin-left: -38px;
+    }
   }
 
-  .borderleft {
-    border-top: 2px solid #eee;
-    border-left: none;
+  @media screen and (min-width: 1024px)and (max-width:1039px) {
+    .tblt_cart {
+      max-width: 540px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-right: -70px;
+      width: 313px;
+      margin-top: -19px;
+    }
+
+    .checkout {
+      border: 1px solid #cfb65e;
+      background-color: #cfb65e;
+      margin-left: 4px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    textarea.form-control {
+      height: auto;
+      width: 100%;
+    }
+
+    .border {
+      border-bottom: 1px solid gray;
+      width: 100%;
+    }
+
+    .repaircheckout {
+      margin-left: -44px;
+    }
+
+    .padding-rightnone1 {
+      font-size: 15px;
+      margin-top: -22px;
+    }
+  }
+  /*FAQ Page*/
+  .accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: -1px;
+    width: 405px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    margin-top: -9px;
+    font-family: none;
   }
 
-  textarea.form-control {
-    height: auto;
-    width: 100%;
+  .active2, .accordion:hover {
+    background-color: white;
   }
 
-  .checkout {
-    border: 1px solid #cfb65e;
-    background-color: #cfb65e;
-    margin-left: 4px;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  .Mobfixmobile {
+  .accordion:after {
+    content: '\002B';
     color: #cfb65e;
     font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-    margin-right: 48px;
-    margin-top: 40px;
-  }
-
-  .Bkoimg1 {
-    height: 120px;
-    padding-top: 20px;
-    text-align: center;
-    margin-left: 58px;
-  }
-
-  .whyblacyimg {
-    margin-top: -16px;
-    float: left;
-    width: 427px;
-    margin-left: 111px;
-  }
-
-  .hr2 {
-    border: 1px solid #cfb65e;
-    width: 768px;
-    margin-left: -38px;
-  }
-}
-
-@media screen and (min-width: 1024px)and (max-width:1039px) {
-  .tblt_cart {
-    max-width: 540px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-right: -70px;
-    width: 313px;
-    margin-top: -19px;
-  }
-
-  .checkout {
-    border: 1px solid #cfb65e;
-    background-color: #cfb65e;
-    margin-left: 4px;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  textarea.form-control {
-    height: auto;
-    width: 100%;
-  }
-
-  .border {
-    border-bottom: 1px solid gray;
-    width: 100%;
-  }
-
-  .repaircheckout {
-    margin-left: -44px;
-  }
-
-  .padding-rightnone1 {
-    font-size: 15px;
-    margin-top: -22px;
-  }
-}
-/*FAQ Page*/
-.accordion {
-  background-color: white;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  margin-left: -1px;
-  width: 405px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  transition: 0.4s;
-  margin-top: -9px;
-  font-family: none;
-}
-
-.active2, .accordion:hover {
-  background-color: white;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #cfb65e;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  font-size: 25px;
-  margin-top: -9px;
-  left: 15px;
-}
-
-.active2:after {
-  content: "\2212";
-  left: 15px;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.thead {
-  border-bottom: 2px solid #cfb65e;
-  background-color: #cfb65e;
-  font-weight: 400;
-  padding: 10px 10px 10px 45px;
-  margin-left: -15px;
-  width: 421px;
-  margin-top: 0px;
-}
-
-.table {
-  width: 45%;
-  margin: 20px 0;
-  border: 1px solid #cfb65e;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.table1 {
-  width: 45%;
-  margin: 20px 0;
-  border: 1px solid #cfb65e;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  margin-left: 40px;
-}
-
-.accordionul {
-  margin-left: -19px;
-}
-
-.accordionli {
-  color: black;
-}
-
-.accordionol {
-  margin-left: -38px;
-}
-
-.faq {
-  margin-top: 10px;
-}
-
-.faqhello {
-  margin-bottom: 20px;
-}
-
-.Oksh3 {
-  color: Black;
-  font-weight: bold;
-  text-align: left;
-  font-size: 16px;
-}
-
-.carousel-inner1 {
-  margin-left: -40px;
-}
-
-
-
-.modalNserver {
-  text-align: left;
-  font-size: 16px;
-}
-
-.whyMobfixp2 {
-  color: black;
-  text-align: left;
-  font-size: 14px;
-}
-
-.hr2 {
-  border: 1px solid #cfb65e;
-  width: 1022px;
-  margin-left: -38px;
-}
-
-.whyMobfixp3 {
-  color: black;
-  text-align: right;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-@media screen and (min-width: 1300px)and (max-width:2020px) {
-  .accordion {
-    background-color: white;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    margin-left: -3px;
-    width: 499px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
     margin-top: -9px;
-    font-family: none;
+    left: 15px;
   }
 
-
-  .thead {
-    border-bottom: 2px solid #cfb65e;
-    background-color: #cfb65e;
-    font-weight: 400;
-    padding: 10px 10px 10px 45px;
-    margin-left: -15px;
-    width: 511px;
-    margin-top: 0px;
+  .active2:after {
+    content: "\2212";
+    left: 15px;
   }
 
-  .carousel-inner1 {
-    margin-left: -50px;
-  }
-
-  .blockquote {
-    border: 2px solid #cfb65e;
-    height: 195px;
-    margin-left: 6px;
-    width: 375px;
-  }
-
-  .modalNserver {
-    text-align: left;
-    font-size: 16px;
-  }
-
-  .hr2 {
-    border: 1px solid #cfb65e;
-    width: 1231px;
-    margin-left: -76px;
-  }
-}
-
-@media screen and (min-width: 768px)and (max-width:1023px) {
-  .accordion {
+  .panel {
+    padding: 0 18px;
     background-color: white;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    margin-left: -4px;
-    width: 324px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
-    margin-top: -9px;
-    font-family: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
 
   .thead {
@@ -4768,12 +4632,12 @@ textarea.form-control {
     font-weight: 400;
     padding: 10px 10px 10px 45px;
     margin-left: -15px;
-    width: 337px;
+    width: 421px;
     margin-top: 0px;
   }
 
   .table {
-    width: 47%;
+    width: 45%;
     margin: 20px 0;
     border: 1px solid #cfb65e;
     border-top-right-radius: 4px;
@@ -4781,114 +4645,265 @@ textarea.form-control {
   }
 
   .table1 {
-    width: 47%;
+    width: 45%;
     margin: 20px 0;
     border: 1px solid #cfb65e;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     margin-left: 40px;
   }
-}
 
-@media screen and (min-width: 300px)and (max-width:767px) {
-  .accordion {
-    background-color: white;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    margin-left: -5px;
-    width: 277px;
-    border: none;
+  .accordionul {
+    margin-left: -19px;
+  }
+
+  .accordionli {
+    color: black;
+  }
+
+  .accordionol {
+    margin-left: -38px;
+  }
+
+  .faq {
+    margin-top: 10px;
+  }
+
+  .faqhello {
+    margin-bottom: 20px;
+  }
+
+  .Oksh3 {
+    color: Black;
+    font-weight: bold;
     text-align: left;
-    outline: none;
     font-size: 16px;
-    transition: 0.4s;
-    margin-top: -9px;
-    font-family: none;
   }
 
-  .thead {
-    border-bottom: 2px solid #cfb65e;
-    background-color: #cfb65e;
-    font-weight: 400;
-    padding: 10px 10px 10px 45px;
-    margin-left: -15px;
-    width: 288px;
-    margin-top: 0px;
+  .carousel-inner1 {
+    margin-left: -40px;
   }
 
-  .table {
-    width: 100%;
-    margin: 20px 0;
-    border: 1px solid #cfb65e;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+
+
+  .modalNserver {
+    text-align: left;
+    font-size: 16px;
   }
 
-  .table1 {
-    width: 100%;
-    margin: 20px 0;
-    border: 1px solid #cfb65e;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+  .whyMobfixp2 {
+    color: black;
+    text-align: left;
+    font-size: 14px;
   }
 
   .hr2 {
     border: 1px solid #cfb65e;
-    width: 293px;
-    margin-left: 0px;
+    width: 1022px;
+    margin-left: -38px;
   }
 
-  .faq {
-    margin-top: 25px;
-  }
-}
-
-@media screen and (min-width: 768px)and (max-width:1023px) {
-  .whyblacyimg1 {
-    margin-left: 55px;
-  }
-
-  .subcribe {
-    border: 1px solid white;
-    width: 210px;
-  }
-  
-  .subscribebutton {
-    float: none;
-    background-color: #cfb65e;
+  .whyMobfixp3 {
     color: black;
-    margin-left: 0px;
-    font-size: 16px;
+    text-align: right;
+    font-size: 14px;
     font-weight: bold;
-    width: 84px;
-    margin-top: -1px;
   }
-}
-/* Generated by http://css.spritegen.com CSS Sprite Generator */
 
-.cart, .email1, .phone {
-  display: inline-block;
-  background: url('png.png') no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
-  text-align: left;
-}
+  @media screen and (min-width: 1300px)and (max-width:2020px) {
+    .accordion {
+      background-color: white;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      margin-left: -3px;
+      width: 499px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: 0.4s;
+      margin-top: -9px;
+      font-family: none;
+    }
 
-.cart {
-  background-position: -20px -0px;
-  width: 26px;
-  height: 26px;
-}
 
-.email1 {
-  background-position: -20px -588px;
-  width: 30px;
-  height: 30px;
-}
+    .thead {
+      border-bottom: 2px solid #cfb65e;
+      background-color: #cfb65e;
+      font-weight: 400;
+      padding: 10px 10px 10px 45px;
+      margin-left: -15px;
+      width: 511px;
+      margin-top: 0px;
+    }
 
-.phone {
-  background-position: -70px -588px;
-  width: 30px;
-  height: 30px;
-}
+    .carousel-inner1 {
+      margin-left: -50px;
+    }
+
+    .blockquote {
+      border: 2px solid #cfb65e;
+      height: 195px;
+      margin-left: 6px;
+      width: 375px;
+    }
+
+    .modalNserver {
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .hr2 {
+      border: 1px solid #cfb65e;
+      width: 1231px;
+      margin-left: -76px;
+    }
+  }
+
+  @media screen and (min-width: 768px)and (max-width:1023px) {
+    .accordion {
+      background-color: white;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      margin-left: -4px;
+      width: 324px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: 0.4s;
+      margin-top: -9px;
+      font-family: none;
+    }
+
+    .thead {
+      border-bottom: 2px solid #cfb65e;
+      background-color: #cfb65e;
+      font-weight: 400;
+      padding: 10px 10px 10px 45px;
+      margin-left: -15px;
+      width: 337px;
+      margin-top: 0px;
+    }
+
+    .table {
+      width: 47%;
+      margin: 20px 0;
+      border: 1px solid #cfb65e;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
+    .table1 {
+      width: 47%;
+      margin: 20px 0;
+      border: 1px solid #cfb65e;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      margin-left: 40px;
+    }
+  }
+
+  @media screen and (min-width: 300px)and (max-width:767px) {
+    .accordion {
+      background-color: white;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      margin-left: -5px;
+      width: 277px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: 0.4s;
+      margin-top: -9px;
+      font-family: none;
+    }
+
+    .thead {
+      border-bottom: 2px solid #cfb65e;
+      background-color: #cfb65e;
+      font-weight: 400;
+      padding: 10px 10px 10px 45px;
+      margin-left: -15px;
+      width: 288px;
+      margin-top: 0px;
+    }
+
+    .table {
+      width: 100%;
+      margin: 20px 0;
+      border: 1px solid #cfb65e;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
+    .table1 {
+      width: 100%;
+      margin: 20px 0;
+      border: 1px solid #cfb65e;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
+    .hr2 {
+      border: 1px solid #cfb65e;
+      width: 293px;
+      margin-left: 0px;
+    }
+
+    .faq {
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (min-width: 768px)and (max-width:1023px) {
+    .whyblacyimg1 {
+      margin-left: 55px;
+    }
+
+    .subcribe {
+      border: 1px solid white;
+      width: 210px;
+    }
+
+    .subscribebutton {
+      float: none;
+      background-color: #cfb65e;
+      color: black;
+      margin-left: 0px;
+      font-size: 16px;
+      font-weight: bold;
+      width: 84px;
+      margin-top: -1px;
+    }
+  }
+  /* Generated by http://css.spritegen.com CSS Sprite Generator */
+  .cart, .email1, .phone {
+    display: inline-block;
+    background: url('png.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+  }
+
+  .cart {
+    background-position: -20px -0px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .email1 {
+    background-position: -20px -588px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone {
+    background-position: -70px -588px;
+    width: 30px;
+    height: 30px;
+  }
