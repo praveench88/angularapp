@@ -2,7 +2,14 @@
   {{vm.status}}
   
   <div class="StatusBtm">
-
+    <div class="row faq">
+      <div class="col-sm-12 col-xs-12">
+        <div class="headingh4">
+          <h4>ORDER STATUS</h4>
+          <hr class="HIWhr" />
+        </div>
+      </div>
+    </div>
     <div class="row StatusBG">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <p class="statuscontent">
@@ -17,30 +24,30 @@
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-5">
           <label for="name" class="Statuslabel">Order ID:</label>
-        </div>        
+        </div>
         <div class="col-md-7 col-sm-7 col-xs-7">
-          <input type="text" class="Statustext" ng-model="vm.OrderID"/>
+          <input type="text" class="Statustext" ng-model="vm.OrderID" />
         </div>
       </div>
 
       <!--<div class="row">
-          <div class="col-md-3 col-sm-3 col-xs-5">
-              <label for="name" class="Statuslabel">Email ID:</label>
-          </div>
+        <div class="col-md-3 col-sm-3 col-xs-5">
+            <label for="name" class="Statuslabel">Email ID:</label>
+        </div>
 
-          <div class="col-md-7 col-sm-7 col-xs-7">
-              <input type="text" class="Statustext" />
-          </div>
-      </div>
+        <div class="col-md-7 col-sm-7 col-xs-7">
+            <input type="text" class="Statustext" />
+        </div>
+    </div>
 
-      <div class="row">
-          <div class="col-md-3 col-sm-3 col-xs-5">
-              <label for="name" class="Statuslabel">Mobile Number:</label>
-          </div>-->
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-5">
+            <label for="name" class="Statuslabel">Mobile Number:</label>
+        </div>-->
       <!--<div class="col-md-7 col-sm-7 col-xs-7">
-              <input type="text" class="Statustext" />
-          </div>
-      </div>-->
+            <input type="text" class="Statustext" />
+        </div>
+    </div>-->
 
       <div class="row">
         <div class="col-md-12 col-sm-12">
@@ -57,7 +64,7 @@
       <div class="row OrderstatusNo">
         <div class="col-md-6 col-sm-6 col-xs-12">
           <!--<label for="name" class="Orderlabel">ORDER ID:</label>
-          <input type="text" class="OrderlabelNo" id="finalCost"></input>-->
+        <input type="text" class="OrderlabelNo" id="finalCost"></input>-->
 
           <label class="Orderlabel" for="models">ORDER ID:</label>
           <input type="text" class="OrderlabelNo" value="{{vm.statusData.OrderID}}" disabled></input>
