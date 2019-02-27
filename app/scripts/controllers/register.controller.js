@@ -46,7 +46,32 @@
           ContactNumber: vm.ContactNumber,
           ContactStatus: "",
           AddByUserID: "",
-          ChangedByID:""
+          ChangedByID: "",
+          LastLoginDate: "",
+          CreatedDate: "",
+          LastUpdateDate: "",
+          FirstName: "",
+          LastName: "",
+          FullName: "",
+          NamePrefix: "",
+          Gender: "",
+          AddDate: "",
+          AddedByUserID: "",
+          ChangedDate: "",
+          ChangedByID: "",
+          ContactAddrID: "",
+          AddressLine1: "",
+          AddressLine2: "",
+          City: "",
+          State: "",
+          Country: "",
+          ZIPCode: "",
+          ContactStatusCD: "",
+          ContactPhoneID: "10",
+          CustID: 3,
+          AddedDate: "NOW()",
+          ChangeDate: "NOW()",
+          ChangeByID: "1"
         }
 
         httpDataService.register(vm.registerCred).then(function (resposeObj) {

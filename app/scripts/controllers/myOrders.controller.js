@@ -17,7 +17,9 @@
     vm.app = 'Mobifix';
     // vm.$state = $state;
     vm.userData = $rootScope.userData[0];
-    vm.myOrdersData = { LoginId: vm.userData.LoginId };
+      
+    vm.myOrdersData = { CustVendorAdminID: vm.userData.custvendAdminID};
+  //  vm.myOrdersData = { LoginId: vm.userData.LoginId };
 
 
 

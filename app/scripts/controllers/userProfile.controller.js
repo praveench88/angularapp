@@ -18,7 +18,9 @@
 
 function userProfile() {
   //$("#registrationForm input").attr("disabled",false);
-    vm.userProfileCred = {
+  vm.userProfileCred = {
+
+      CustAdminid: vm.userData.custvendAdminID,
       LoginId: vm.userData.LoginId,
       FirstName: vm.userData.FirstName,
       LastName: vm.userData.LastName,
@@ -28,7 +30,30 @@ function userProfile() {
       City: vm.userData.City,
       State: vm.userData.State,
       Country: vm.userData.Country,
-      ZIPCode: vm.userData.ZIPCode
+    ZIPCode: vm.userData.ZIPCode,
+      NoOfAttempts: "",
+    LastLoginDate: "",
+    UserStatus: "",
+    CreatedDate: "",
+    CrearedBy: 1,
+    LastUpdateDate: "",
+    LastUpdateBy: 1,
+    NamePrefix: "",
+    Gender: "",
+    AddDate: "",
+    AddedByUserID: "",
+    ChangedDate: "",
+    ChangedByID: "",
+    ContactAddrID: "",
+    ContactStatusCD: "",
+    ContactPhoneID: "",
+    CustID: "",
+    ContactNumber: "",
+    ContactStatus: "",
+    AddedDate: "",
+    AddByUserID: "",
+    ChangeDate: "",
+    ChangeByID: ""
     }
 
       httpDataService.userProfile(vm.userProfileCred).then(function(resposeObj) {

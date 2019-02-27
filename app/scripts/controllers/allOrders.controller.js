@@ -9,7 +9,7 @@
     'use strict';
      function allOrdersControllerConstructor($sce, httpDataService, commonModal,$scope, $http, $state) {
 
-            httpDataService.allorders().then(function(resposeObj){
+            httpDataService.allOrders().then(function(resposeObj){
                 if(resposeObj.status == 200){
                    $scope.allOrdersData = resposeObj.data;
                    
