@@ -33,8 +33,8 @@
       var url = apiUrls.login;
       return httpRequestWrapper.post(url,userData,null, null, true);
     }
-    function allorders(){
-      var url = apiUrls.allorders;
+    function allOrders(){
+      var url = apiUrls.allOrders;
       return httpRequestWrapper.get(url,null, null, true);
     }
      function allusers(){
@@ -89,10 +89,10 @@
       var url = apiUrls.vendorRegister;
       return httpRequestWrapper.post(url, userData, null, null, true);
     }
-    function allmobiletypes() {
+    function allmobiletypes(userData) {
 
       var url = apiUrls.allmobiletypes;
-      return httpRequestWrapper.get(url, null, null, true);
+      return httpRequestWrapper.get(url, userData, null, null, true);
     }
     function insertorder(userData) {
       var url = apiUrls.insertorder;
@@ -116,7 +116,7 @@
       brandModel:brandModel,
       issuePrice:issuePrice,
       checkout:checkout,
-      allorders:allorders,
+      allOrders:allOrders,
       allusers:allusers,
       myorders: myorders,
       status: status,

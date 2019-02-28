@@ -53,17 +53,8 @@
 
 
             vm.insertorderdata = {
-
-              UserType: 1,
-              LoginId: vm.userData.LoginId,
-              //Password: "abc456", //remove password field from frontend and backend
-              NoOfAttempts: 2, //remove
-              LastLoginDate: "NOW()",
-              UserStatus: "B", //remove
-              CreatedDate: "NOW()",
-              CrearedBy: 1,
-              LastUpdateDate: "NOW()",
-              LastUpdateBy: 1,
+              // UserType: 1,
+              CustVendorAdminID: vm.userData.custvendAdminID,
               AssignedtoVendorID: "", //reomve
               IssuesTypeID: vm.phoneissueid,
               IssueDetails: vm.phoneissues,
@@ -72,13 +63,57 @@
               MobileVersionTypeID: vm.slectedModel.MobileVerTypeID,
               CustDemoID: "",
               ContactAddrID: "",
-              ContactPhoneID:vm.userData.ContactNumber,
+              ContactPhoneID: vm.userData.ContactNumber,
               InitialQuote: "",
               EstimatedQuote: "",
               FinalCost: vm.totalprice,
              // mobilemodel: vm.mobilemodel,
               OrderPlacedDate: "NOW()",
-              EstimatedTimetoDeliver: "NOW()" //change
+              EstimatedTimetoDeliver: "NOW()", //change
+              orderstatusdescription: vm.orderstatusdescription,
+              orderstatusIND: "",
+              createdDate: "NOW()",
+              createdBy: "",
+              lastmodifiedDate: "NOW()",
+              lastmodifiedBy: "",
+              mobileCompanyDesc: vm.userData.mobileCompanyDesc,
+              mobileTypeIND: "",
+              Date: "NOW()",
+              By: "",
+              dDate: "NOW()",
+              dBy: "",
+              mobileversionDesc: vm.userData.mobileversionDesc,
+              mobileversionTypeIND: "",
+              mobDate: "NOW()",
+              mobBy: "",
+              mobbDate: "",
+              mobbBy:""
+              
+            //  UserType: 1,
+            //  CustVendorAdminID: vm.userData.CustVendorAdminID,
+            //  LoginId: vm.userData.LoginId,
+            //  //Password: "abc456", //remove password field from frontend and backend
+            //  NoOfAttempts: 2, //remove
+            //  LastLoginDate: "NOW()",
+            //  UserStatus: "B", //remove
+            //  CreatedDate: "NOW()",
+            //  CrearedBy: 1,
+            //  LastUpdateDate: "NOW()",
+            //  LastUpdateBy: 1,
+            //  AssignedtoVendorID: "", //reomve
+            //  IssuesTypeID: vm.phoneissueid,
+            //  IssueDetails: vm.phoneissues,
+            //  IEMI: "",
+            //  MobileCompID: vm.slectedBrand.MobileCompanyID,
+            //  MobileVersionTypeID: vm.slectedModel.MobileVerTypeID,
+            //  CustDemoID: "",
+            //  ContactAddrID: "",
+            //  ContactPhoneID:vm.userData.ContactNumber,
+            //  InitialQuote: "",
+            //  EstimatedQuote: "",
+            //  FinalCost: vm.totalprice,
+            //  OrderPlacedDate: "NOW()",
+            //  EstimatedTimetoDeliver: "NOW()" //change
             }
 
             httpDataService.insertorder(vm.insertorderdata).then(function (resposeObj) {
