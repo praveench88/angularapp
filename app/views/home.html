@@ -30,7 +30,10 @@
   </div>
   <div class="row m-t-15">
     <div class="mobifixsmart">
-      <input type="text" id="search" placeholder="Type Brand or Model Name (e.g. Apple , Asus, Xperia X)" class="searchbar" ng-model="vm.searchbar"><button type="submit" class="searchbaricon"><i class="glyphicon glyphicon-search"></i></button>
+
+      <form onsubmit="$('#hero-demo').blur();return false;" class="pure-form">
+        <input id="hero-demo" autofocus type="text" name="q" placeholder="Type Brand or Model Name (e.g. Apple , Asus, Xperia X)" class="searchbar"><button type="submit" class="searchbaricon"><i class="glyphicon glyphicon-search"></i></button>
+      </form>
       <h3 class="bannercontent hidden-xs">SMART PHONES/TABLETS REPAIRING</h3>
       <p class="bannercontent hidden-xs">In Metro City Or In Suburb .. We’ve Got You Covered! Free Pickup and Delivery Service across 16000+ Pin Codes in India</p>
       <a role="button" href="/" ui-sref="mobileRepair" class="align">
@@ -379,11 +382,11 @@
                   <img src="../assets/images/facebook_black.png" alt="" class="footerfb" />
                 </a>
               </li>
-              <li>
+              <!--<li>
                 <a href="mailto:MobFix@gmail.co.in">
                   <img src="../assets/images/googleplus_black.png" alt="" class="footergplus2" />
                 </a>
-              </li>
+              </li>-->
               <li>
                 <a href="https://twitter.com/MobFixIndia" target="_blank">
                   <img src="../assets/images/twitter_black.png" alt="" class="footertwitter2" />
@@ -394,11 +397,11 @@
                   <img src="../assets/images/instragram_black.png" alt="" class="footerwivfi" />
                 </a>
               </li>
-              <li>
+              <!--<li>
                 <a href="#">
                   <img src="../assets/images/linkedin_black.png" alt="" class="footerwivfi" />
                 </a>
-              </li>
+              </li>-->
               <li>
                 <a href="https://in.pinterest.com/0n4n5gzxqbh9ukvgvd33fzkdg5k09z/pins/" target="_blank">
                   <img src="../assets/images/pintrest_black.png" alt="" class="footerwivfi" />
@@ -411,6 +414,7 @@
     </div>
   </div>
 </div>
+
 
 <script>
   $(document).ready(function () {
@@ -445,5 +449,43 @@
   $(document).ready(function () {
     $('#imageCarousel').carousel();
   });
+</script>
+
+<script>
+  $(function () {
+    $('#hero-demo').autoComplete({
+      minChars: 1,
+      source: function (term, suggest) {
+        term = term.toLowerCase();
+        var choices = ['Apple', 'NOKIA', 'SANGSUNG', 'ASUS', 'MOTOROLA', 'HTC', 'SONY', 'LG', 'MICROSOFT', 'HUAWEI', 'LENOVO', 'XIAOMI', 'GOOGLE', 'ACER', 'OPPO', 'ONEPLUS', 'HP', 'BLACKBERRY', 'ALCATEL', 'ZTE', 'TOSHIBA', 'VODAFONE', 'ENERGIZER', 'CAT', 'LAVA', 'IBALL', 'WIKO', 'VIVO', 'LEECO', 'PANASONIC', 'YU', 'VERYCOOL', 'MAXWEST', 'PLUM', 'GIONEE', 'KARBONN', 'COOLPAD', 'INTEX', 'MICROMAX', 'LYF', 'NEXUS', 'CELKON', 'SPICE', 'MOBISTAR', 'CENTRIC', 'COMIO', 'VOTO', 'ITEL', 'LEEPHONE', 'REALME', 'SWIPE', 'TECNO', 'OTHER BRANDS'];
+        var suggestions = [];
+        for (i = 0; i < choices.length; i++)
+          if (~choices[i].toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+        suggest(suggestions);
+      }
+    });
+    $('#advanced-demo').autoComplete({
+      minChars: 0,
+      source: function (term, suggest) {
+        term = term.toLowerCase();
+        var choices = [['Australia', 'au'], ['Austria', 'at'], ['Brasil', 'br'], ['Bulgaria', 'bg'], ['Canada', 'ca'], ['China', 'cn'], ['Czech Republic', 'cz'], ['Denmark', 'dk'], ['Finland', 'fi'], ['France', 'fr'], ['Germany', 'de'], ['Hungary', 'hu'], ['India', 'in'], ['Italy', 'it'], ['Japan', 'ja'], ['Netherlands', 'nl'], ['Norway', 'no'], ['Portugal', 'pt'], ['Romania', 'ro'], ['Russia', 'ru'], ['Spain', 'es'], ['Swiss', 'ch'], ['Turkey', 'tr'], ['USA', 'us']];
+        var suggestions = [];
+        for (i = 0; i < choices.length; i++)
+          if (~(choices[i][0] + ' ' + choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+        suggest(suggestions);
+      },
+      renderItem: function (item, search) {
+        search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
+        return '<div class="autocomplete-suggestion" data-langname="' + item[0] + '" data-lang="' + item[1] + '" data-val="' + search + '"><img src="img/' + item[1] + '.png"> ' + item[0].replace(re, "<b>$1</b>") + '</div>';
+      },
+      onSelect: function (e, term, item) {
+        console.log('Item "' + item.data('langname') + ' (' + item.data('lang') + ')" selected by ' + (e.type == 'keydown' ? 'pressing enter or tab' : 'mouse click') + '.');
+        $('#advanced-demo').val(item.data('langname') + ' (' + item.data('lang') + ')');
+      }
+    });
+  });
+
+
 </script>
 

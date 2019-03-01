@@ -8,8 +8,11 @@
 (function(angular) {
     'use strict';
 
-    function homeControllerConstructor($sce, httpDataService, commonModal) {
-        
+  function homeControllerConstructor($scope, $http, httpDataService, $state, $rootScope, commonModal) {
+
+    var vm = this;
+    vm.$state = $state;
+
         var vm = this;
         vm.app = 'Mobifix'
         
