@@ -10,22 +10,22 @@
     }
   ],
   "apiUrls": {
-    "login": "http://localhost:50709/api/user/UserNameStatus",
-    "getallusers": "http://localhost:50709/api/user/GetAllUsers",
-    "register": "http://localhost:50709/api/User/InsertUserRegistrationDetails",
-    "userProfile": "http://localhost:50709/api/User/UpdateUserStatus",
-    "vendorRegister": "http://localhost:50709/api/Vendor/InsertVendorRegistrationDetails",
-    "vendorLogin": "http://localhost:50709/api/Vendor/VendorNameStatus",
-    "model": "http://localhost:50709/api/MobileVersion/GetMobileVersion",
-    "issueprice": "http://localhost:50709/api/IssuePrice/GetIssueprice",
-    "getallorders": "http://localhost:50709/api/Order/GetAllOrders",
+    "login": "https://mobfix.co.in/api/user/UserNameStatus",
+    "getallusers": "https://mobfix.co.in/api/user/GetAllUsers",
+    "register": "https://mobfix.co.in/api/User/InsertUserRegistrationDetails",
+    "userProfile": "https://mobfix.co.in/api/User/UpdateUserStatus",
+    "vendorRegister": "https://mobfix.co.in/api/Vendor/InsertVendorRegistrationDetails",
+    "vendorLogin": "https://mobfix.co.in/api/Vendor/VendorNameStatus",
+    "model": "https://mobfix.co.in/api/MobileVersion/GetMobileVersion",
+    "issueprice": "https://mobfix.co.in/api/IssuePrice/GetIssueprice",
+    "getallorders": "https://mobfix.co.in/api/Order/GetAllOrders",
     "checkout": "http://www.instamojo.com/api/1.1/payment-requests/",
-    "allOrders": "http://localhost:50709/api/Order/GetAllOrders",
-    "allusers": "http://localhost:50709/api/user/GetAllUsers",
-    "allmobiletypes": "http://localhost:50709/api/MobileTypes/GetAllMobileTypes",
-    "myorders": "http://localhost:50709/api/Order/GetemailOrder",
-    "insertorder": "http://localhost:50709/api/Order/InsertOrderDetails",
-    "status": "http://localhost:50709/api/OrderStatus/GetOrderStatus"
+    "allOrders": "https://mobfix.co.in/api/Order/GetAllOrders",
+    "allusers": "https://mobfix.co.in/api/user/GetAllUsers",
+    "allmobiletypes": "https://mobfix.co.in/api/MobileTypes/GetAllMobileTypes",
+    "myorders": "https://mobfix.co.in/api/Order/GetemailOrder",
+    "insertorder": "https://mobfix.co.in/api/Order/InsertOrderDetails",
+    "status": "https://mobfix.co.in/api/OrderStatus/GetOrderStatus"
   },
   "data": {
 
