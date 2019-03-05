@@ -2323,14 +2323,19 @@ input[type="search"] {
 }
 
 .social-icons ul li a {
-  //background: #cfb65e;
+
   height: 100%;
   width: 100%;
   border-radius: 200%;
   padding: 8px 10px;
   color: black;
 }
-
+.footerfb2 {
+  margin-left: 0px;
+  width: 20px;
+  height: 22px;
+  margin-top: 6px;
+}
 .fa-facebook-f:before, .fa-facebook:before {
   content: "\f09a";
 }
@@ -2403,7 +2408,7 @@ input[type="search"] {
     padding: 30px 0px 40px;
     color: Black;
     width: 168px;
-    font-size: 25px;
+    font-size: 21px;
     margin-left: 34px;
   }
 
@@ -2981,6 +2986,18 @@ input[type="search"] {
     margin-top: 0px;
     margin-left: 19px;
   }
+  .BookOnlineBG {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 43px;
+    background-color: darkgray;
+  }
+  .RepairBG {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 26px;
+  }
+  .finalwidth{width:100%;}
 }
 
 
