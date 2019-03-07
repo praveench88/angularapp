@@ -14,9 +14,9 @@
     vm.$state = $state;
     vm.checkedIssues = [];
     $('#ordersuccess').hide();
-      $('#orderfailure').hide();
-      $('#couponFailure').hide()
-      $('#couponSuccess').hide()
+    $('#orderfailure').hide();
+    $('#couponFailure').hide()
+    $('#couponSuccess').hide()
 
 
     function checkout() {
@@ -52,86 +52,88 @@
         //   } else if (resposeObj.status == 201) {
 
 
-            vm.insertorderdata = {
-              // UserType: 1,
-              CustVendorAdminID: vm.userData.custvendAdminID,
-              AssignedtoVendorID: "", //reomve
-              IssuesTypeID: vm.phoneissueid,
-              IssueDetails: vm.phoneissues,
-              IEMI: "",
-              MobileCompID: vm.slectedBrand.MobileCompanyID,
-              MobileVersionTypeID: vm.slectedModel.MobileVerTypeID,
-              CustDemoID: "",
-              ContactAddrID: "",
-              ContactPhoneID: vm.userData.ContactNumber,
-              InitialQuote: "",
-              EstimatedQuote: "",
-              FinalCost: vm.totalprice,
-             // mobilemodel: vm.mobilemodel,
-              OrderPlacedDate: "NOW()",
-              EstimatedTimetoDeliver: "NOW()", //change
-              orderstatusdescription: vm.orderstatusdescription,
-              orderstatusIND: "",
-              createdDate: "NOW()",
-              createdBy: "",
-              lastmodifiedDate: "NOW()",
-              lastmodifiedBy: "",
-              mobileCompanyDesc: vm.userData.mobileCompanyDesc,
-              mobileTypeIND: "",
-              Date: "NOW()",
-              By: "",
-              dDate: "NOW()",
-              dBy: "",
-              mobileversionDesc: vm.userData.mobileversionDesc,
-              mobileversionTypeIND: "",
-              mobDate: "NOW()",
-              mobBy: "",
-              mobbDate: "",
-              mobbBy:""
-              
-            //  UserType: 1,
-            //  CustVendorAdminID: vm.userData.CustVendorAdminID,
-            //  LoginId: vm.userData.LoginId,
-            //  //Password: "abc456", //remove password field from frontend and backend
-            //  NoOfAttempts: 2, //remove
-            //  LastLoginDate: "NOW()",
-            //  UserStatus: "B", //remove
-            //  CreatedDate: "NOW()",
-            //  CrearedBy: 1,
-            //  LastUpdateDate: "NOW()",
-            //  LastUpdateBy: 1,
-            //  AssignedtoVendorID: "", //reomve
-            //  IssuesTypeID: vm.phoneissueid,
-            //  IssueDetails: vm.phoneissues,
-            //  IEMI: "",
-            //  MobileCompID: vm.slectedBrand.MobileCompanyID,
-            //  MobileVersionTypeID: vm.slectedModel.MobileVerTypeID,
-            //  CustDemoID: "",
-            //  ContactAddrID: "",
-            //  ContactPhoneID:vm.userData.ContactNumber,
-            //  InitialQuote: "",
-            //  EstimatedQuote: "",
-            //  FinalCost: vm.totalprice,
-            //  OrderPlacedDate: "NOW()",
-            //  EstimatedTimetoDeliver: "NOW()" //change
-            }
+        vm.insertorderdata = {
+          // UserType: 1,
+          CustVendorAdminID: vm.userData.custvendAdminID,
+          AssignedtoVendorID: "", //reomve
+          IssuesTypeID: vm.phoneissueid,
+          IssueDetails: vm.phoneissues,
+          IEMI: "",
+          MobileCompID: vm.slectedBrand.MobileCompanyID,
+          MobileVersionTypeID: vm.slectedModel.MobileVerTypeID,
+          CustDemoID: "",
+          ContactAddrID: "",
+          ContactPhoneID: vm.userData.ContactNumber,
+          InitialQuote: "",
+          EstimatedQuote: "",
+          FinalCost: vm.totalprice,
+          // mobilemodel: vm.mobilemodel,
+          OrderPlacedDate: "NOW()",
+          EstimatedTimetoDeliver: "NOW()", //change
+          orderstatusdescription: "ORDER PLACED",
+          orderstatusIND: "",
+          createdDate: "NOW()",
+          createdBy: "",
+          lastmodifiedDate: "NOW()",
+          lastmodifiedBy: "",
+          mobileCompanyDesc: vm.slectedBrand.MobileCompany,
 
-            httpDataService.insertorder(vm.insertorderdata).then(function (resposeObj) {
-              if (resposeObj.status == 200) {
-                $("#ordersuccess").show();
-              } else if (resposeObj.status == 404) {
-                $("#orderfailure").show();
-              }
-            });
+          mobileTypeIND: "",
+          Date: "NOW()",
+          By: "",
+          dDate: "NOW()",
+          dBy: "",
+          mobileversionDesc: vm.slectedModel.MobileVersionDescription,
+          mobileversionTypeIND: "",
+          mobDate: "NOW()",
 
+          mobBy: "",
+          mobbDate: "",
+          mobbBy: ""
 
-            // Error Scenarios
-            //window.location = resposeObj.data.payment_request.longurl;
+          //  UserType: 1,
+          //  CustVendorAdminID: vm.userData.CustVendorAdminID,
+          //  LoginId: vm.userData.LoginId,
+          //  //Password: "abc456", //remove password field from frontend and backend
+          //  NoOfAttempts: 2, //remove
+          //  LastLoginDate: "NOW()",
+          //  UserStatus: "B", //remove
+          //  CreatedDate: "NOW()",
+          //  CrearedBy: 1,
+          //  LastUpdateDate: "NOW()",
+          //  LastUpdateBy: 1,
+          //  AssignedtoVendorID: "", //reomve
+          //  IssuesTypeID: vm.phoneissueid,
+          //  IssueDetails: vm.phoneissues,
+          //  IEMI: "",
+          //  MobileCompID: vm.slectedBrand.MobileCompanyID,
+          //  MobileVersionTypeID: vm.slectedModel.MobileVerTypeID,
+          //  CustDemoID: "",
+          //  ContactAddrID: "",
+          //  ContactPhoneID:vm.userData.ContactNumber,
+          //  InitialQuote: "",
+          //  EstimatedQuote: "",
+          //  FinalCost: vm.totalprice,
+          //  OrderPlacedDate: "NOW()",
+          //  EstimatedTimetoDeliver: "NOW()" //change
+        }
 
-
-         
-        // });
+        httpDataService.insertorder(vm.insertorderdata).then(function (resposeObj) {
+          if (resposeObj.status == 200) {
+            $("#ordersuccess").show();
+          } else if (resposeObj.status == 404) {
+            $("#orderfailure").show();
           }
+        });
+
+
+        // Error Scenarios
+        //window.location = resposeObj.data.payment_request.longurl;
+
+
+
+        // });
+      }
       else {
 
 
@@ -155,10 +157,10 @@
       $scope.selectedItemChanged = function (item) {
 
         vm.slectedBrand = {
-          MobileCompanyID: item.MobileCompanyID
+          MobileCompanyID: item.MobileCompanyID,
+          MobileCompany: item.MobileCompany
+          }
 
-        }
-        
         httpDataService.brandModel(vm.slectedBrand).then(function (resposeObj) {
           if (resposeObj.status == 200) {
             $scope.model = resposeObj.data;
@@ -170,8 +172,8 @@
 
       $scope.selectedModelItemChanged = function (item) {
         vm.slectedModel = {
-          MobileVerTypeID: item.MobileVersionTypeID
-
+          MobileVerTypeID: item.MobileVersionTypeID,
+          MobileVersionDescription: item.MobileVersionDescription
         }
 
         httpDataService.issuePrice(vm.slectedModel).then(function (resposeObj) {
@@ -187,27 +189,24 @@
     });
 
 
-function couponValidation()
-{
-      if(vm.finalcoupon=="Launch Special" || vm.finalcoupon=="LaunchSpecial" || vm.finalcoupon=="launchspecial" || vm.finalcoupon=="LAUNCHSPECIAL" )
-
-      {
-          $('#couponSuccess').show()
-          vm.finaldiscount=vm.totalprice*.30;
-          vm.grandtotal=vm.totalprice-vm.finaldiscount;
+    function couponValidation() {
+      if (vm.finalcoupon == "Launch Special" || vm.finalcoupon == "LaunchSpecial" || vm.finalcoupon == "launchspecial" || vm.finalcoupon == "LAUNCHSPECIAL") {
+        $('#couponSuccess').show()
+        vm.finaldiscount = vm.totalprice * .30;
+        vm.grandtotal = vm.totalprice - vm.finaldiscount;
       }
-      else{
-$('#couponFailure').show()
+      else {
+        $('#couponFailure').show()
       }
 
-}
+    }
 
     function priceCalculation() {
       vm.totalprice = 0;
       vm.issueDetails = $scope.issueprice;
       vm.phoneissues = "";
-     // vm.mobilemodel = $scope.model;
-      vm.phoneissueid="";
+      // vm.mobilemodel = $scope.model;
+      vm.phoneissueid = "";
       for (var i = 0; i < vm.issueDetails.length; i++) {
 
         if (vm.issueDetails[i].checked) {
@@ -224,13 +223,13 @@ $('#couponFailure').show()
       vm.phoneissues;
       vm.totalprice;
       //vm.mobilemodel;
-      
+
 
     }
 
     vm.checkout = checkout;
     vm.priceCalculation = priceCalculation;
-    vm.couponValidation=couponValidation;
+    vm.couponValidation = couponValidation;
     //vm.openloginModal = openloginModal;
 
     // vm.app = 'Mobifix';
