@@ -2380,6 +2380,12 @@ input[type="search"] {
   height: 21px;
   margin-top: 3px;
 }
+.lock {
+  height: 20px;
+  /* margin-top: 19px; */
+  margin-left: 8px;
+}
+.passwordlock{margin-top:-25px;}
 @media screen and (min-width: 280px)and (max-width:767px) {
   .modal-dialog {
     width: 329px;
