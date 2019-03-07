@@ -11,8 +11,10 @@
 
     //$("#registrationForm input").attr("disabled",true);
     $("#updateSuccess").hide();
-     $("#updateFailure").hide();
+    $("#updateFailure").hide();
 
+
+    function getuserDetails() {      vm.profileCred = {        custvendAdminID: vm.userData.custvendAdminID      }      httpDataService.getuserDetails(vm.profileCred).then(function (resposeObj) {        if (resposeObj.status == 200) {          $rootScope.userData = resposeObj.data;          localStorage.setItem("currentUser", JSON.stringify(resposeObj.data));        } else if (resposeObj.status == 404) {        }      });    }
 
 
 
@@ -20,7 +22,8 @@ function userProfile() {
   //$("#registrationForm input").attr("disabled",false);
   vm.userProfileCred = {
 
-      CustAdminid: vm.userData.custvendAdminID,
+    custvendAdminID: vm.userData.custvendAdminID,
+    //CustAdminid: vm.userData.CustAdminid,
       LoginId: vm.userData.LoginId,
       FirstName: vm.userData.FirstName,
       LastName: vm.userData.LastName,
@@ -48,7 +51,7 @@ function userProfile() {
     ContactStatusCD: "",
     ContactPhoneID: "",
     CustID: "",
-    ContactNumber: "",
+    ContactNumber: vm.userData.ContactNumber,
     ContactStatus: "",
     AddedDate: "",
     AddByUserID: "",
@@ -58,6 +61,7 @@ function userProfile() {
 
       httpDataService.userProfile(vm.userProfileCred).then(function(resposeObj) {
         if (resposeObj.status == 200) {
+          getuserDetails();
          $("#updateSuccess").show();
          $("#registrationForm input").attr("disabled",true);
       } else if (resposeObj.status == 404) {
@@ -70,7 +74,8 @@ function userProfile() {
     
    
   }
-  vm.userProfile = userProfile;
+    vm.userProfile = userProfile;
+    vm.getuserDetails = getuserDetails;
   //vm.edituserProfile=edituserProfile
   vm.userData= $rootScope.userData[0];
 }
