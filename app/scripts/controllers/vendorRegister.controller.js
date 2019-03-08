@@ -28,7 +28,7 @@
       };
       var modalDismissCallBack = function () {
       };
-      commonModal.openModal('loginModal', resolveAttributes, modalCallBack, modalDismissCallBack);
+      commonModal.openModal('vendorLoginModal', resolveAttributes, modalCallBack, modalDismissCallBack);
     }
 
     function vendorRegister() {
