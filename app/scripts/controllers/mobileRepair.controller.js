@@ -159,7 +159,7 @@
         vm.slectedBrand = {
           MobileCompanyID: item.MobileCompanyID,
           MobileCompany: item.MobileCompany
-          }
+        }
 
         httpDataService.brandModel(vm.slectedBrand).then(function (resposeObj) {
           if (resposeObj.status == 200) {

@@ -13,7 +13,6 @@
         <div class="carousel-inner">
           <div class="item active">
             <img src="../assets/images/mobfix-campaign.jpg" alt="Mobfix" class="img-responsive height">
-
           </div>
           <div class="item ">
             <img src="../assets/images/Mobfix4.jpeg" alt="Mobfix" class="img-responsive height">
@@ -31,14 +30,14 @@
   <div class="row m-t-15">
     <div class="mobifixsmart">
       <form onsubmit="$('#hero-demo').blur();return false;" class="pure-form">
-        <input id="hero-demo" autofocus type="text" name="q" placeholder="Type Brand or Model Name (e.g. Apple , Asus, Xperia X)" class="searchbar"><button type="submit" class="searchbaricon"><i class="glyphicon glyphicon-search"></i></button>
+        <input id="hero-demo" autofocus type="text" name="q" placeholder="Type Brand or Model Name (e.g. Apple , Asus, Xperia X)" class="searchbar" required><button type="submit" class="searchbaricon"><i class="glyphicon glyphicon-search"></i></button>
       </form>
       <h3 class="bannercontent hidden-xs">SMART PHONES/TABLETS REPAIRING</h3>
       <p class="bannercontent hidden-xs">In Metro City Or In Suburb .. We’ve Got You Covered! Free Pickup and Delivery Service across 16000+ Pin Codes in India</p>
       <a role="button" href="/" ui-sref="mobileRepair" class="align">
         <button type="button" class="btn viewrepairbutton">BOOK FOR REPAIRS</button>
       </a>
-      
+
     </div>
   </div>
   <div class="row viewcontent">
@@ -337,21 +336,21 @@
               <div class="col-sm-6 makeconright">
                 <input type="number" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any."
                        ng-model="vm.ContactNumber" ng-pattern="/^[7-9][0-9]{9}$/" required />
-         
+
                 <div ng-messages="myform.phone.$error">
                   <!--<div ng-messages="form.phone.$error.minlength">
-  <div ng-messages="form.phone.$error.maxlength">-->
+                  <div ng-messages="form.phone.$error.maxlength">-->
                   <div ng-messages="myform.phone.$error.pattern">
                     <div ng-message="required">This field is required</div>
                     <div ng-message="phone">Enter your valid phone number</div>
                   </div>
                 </div>
-                </div>
-                <div class="col-sm-6 makeconleft">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." ng-model="vm.userData.LoginId" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;" required>
-                  
-                </div>
               </div>
+              <div class="col-sm-6 makeconleft">
+                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." ng-model="vm.userData.LoginId" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;" required>
+
+              </div>
+            </div>
             <div class="form-group">
               <div class="col-sm-12">
                 <textarea id="feedback" name="feedback" class="form-control textarea" placeholder="Enter your feedback..." rows="5" ng-model="vm.message" required></textarea>
