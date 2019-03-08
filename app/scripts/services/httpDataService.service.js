@@ -98,7 +98,10 @@
       var url = apiUrls.insertorder;
       return httpRequestWrapper.post(url, userData, null, null, true);
     }
-    function getuserDetails(userData) {      var url = apiUrls.getuserDetails;      return httpRequestWrapper.post(url, userData, null, null, true);    }
+    function getuserDetails(userData) {
+      var url = apiUrls.getuserDetails;
+      return httpRequestWrapper.post(url, userData, null, null, true);
+    }
 
 
     function logout (userData) {
