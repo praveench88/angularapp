@@ -7,24 +7,17 @@
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 MembersSignIn">
-
-      <div id="registerSuccess" class="alert alert-success" style="display:none;">
-          Registration Successful !!
-        </div>
-  <div id="registerFailure"  class="alert alert-danger" style="display:none;">
-   Registration not Successful
-</div>
         <h3 class="title">Register</h3>
 
 
         <form class="box SignInformbox" name="myForm" id="registrationForm">
           <!--form [formGroup]="registerForm" (ngSubmit)="onSubmit()">-->
           <!-- <div class="inner-addon left-addon inputbox col">
-    <i class="glyphicon glyphicon-user col"></i>
-    <input type="text" class="form-control input-borderless" id="userName" name="userName" placeholder="User name" />
-  </div>-->
+      <i class="glyphicon glyphicon-user col"></i>
+      <input type="text" class="form-control input-borderless" id="userName" name="userName" placeholder="User name" />
+    </div>-->
           <div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
-            <div class="inner-addon left-addon inputbox col">
+            <div class="inner-addon left-addon inputbox">
               <img src="../assets/images/user.png" class="lock" />
               <input type="text" name="firstName" id="firstName" ng-model="vm.UserType" class="form-control input-borderless passwordlock" placeholder="User name" required />
               <span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block">First name is required</span>
@@ -33,9 +26,9 @@
 
 
           <!--<div class="inner-addon left-addon">
-      <i class="glyphicon glyphicon-envelope col"></i>
-      <input id="email" type="text" class="form-control input-borderless" name="email" placeholder="Email">
-  </div>-->
+        <i class="glyphicon glyphicon-envelope col"></i>
+        <input id="email" type="text" class="form-control input-borderless" name="email" placeholder="Email">
+    </div>-->
           <div class="inner-addon left-addon">
             <img src="../assets/images/email.png" class="lock" />
             <input type="email" name="email" class="form-control input-borderless passwordlock" ng-model="vm.username" placeholder="Email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;" required>
@@ -47,9 +40,9 @@
 
 
           <!--<div class="inner-addon left-addon">
-    <i class="glyphicon glyphicon-phone col"></i>
-    <input type="text" class="form-control input-borderless" name="phone" id="phone" placeholder="Mobile No" />
-  </div>-->
+      <i class="glyphicon glyphicon-phone col"></i>
+      <input type="text" class="form-control input-borderless" name="phone" id="phone" placeholder="Mobile No" />
+    </div>-->
           <!--ng-maxlength="10" ng-pattern="/^[0-9]{1,7}$/"  ng-minlength="10"-->
 
           <div class="inner-addon left-addon">
@@ -57,13 +50,13 @@
             <input type="number" name="phone" class="form-control input-borderless passwordlock" ng-model="vm.ContactNumber" placeholder="Phone" ng-pattern="/^[7-9][0-9]{9}$/" required>
             <span ng-show="myForm.phone.$error.pattern">Please enter valid number!</span>
           </div>
-          
+
           <!--</div>
-  </div>-->
+    </div>-->
           <!--<div class="inner-addon left-addon">
-    <i class="glyphicon glyphicon-lock col"></i>
-    <input id="password" type="password" class="form-control input-borderless" name="password" placeholder="Password">
-  </div>-->
+      <i class="glyphicon glyphicon-lock col"></i>
+      <input id="password" type="password" class="form-control input-borderless" name="password" placeholder="Password">
+    </div>-->
 
           <div class="inner-addon left-addon">
             <!--<i class="glyphicon glyphicon-lock col"></i>-->
@@ -116,7 +109,12 @@
           </div>
           <!-- Footer Elements -->
         </form>
-
+        <div id="registerSuccess" class="alert alert-success" style="display:none; margin-top: -28px;">
+          Registration Successful !!
+        </div>
+        <div id="registerFailure" class="alert alert-danger" style="display:none;  margin-top: -28px;">
+          Registration not Successful
+        </div>
       </div>
 
     </div>

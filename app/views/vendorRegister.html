@@ -8,21 +8,12 @@
 
       <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 MembersSignIn">
 
-      <div id="vendorregisterSuccess" class="alert alert-success" style="display:none;">
-          Registration Successful !!
-        </div>
-      <div id="vendorregisterFailure"  class="alert alert-danger" style="display:none;">
-        Registration not Successful
-      </div>
         <h3 class="title">Vendor Register</h3>
-
-
-
         <form class="box SignInformbox" name="myForm" id="vendorregistrationForm">
 
           <div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
-            <div class="inner-addon left-addon inputbox col">
-              <   <img src="../assets/images/user.png" class="lock" />
+            <div class="inner-addon left-addon inputbox">
+              <img src="../assets/images/user.png" class="lock" />
               <input type="text" name="firstName" id="firstName" class="form-control input-borderless passwordlock" placeholder="User name" ng-model="vm.UserType" required />
               <span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block">First name is required</span>
             </div>
@@ -91,11 +82,13 @@
 
           </div>
           <!-- Footer Elements -->
-
-
-
         </form>
-
+        <div id="registerSuccess" class="alert alert-success" style="display:none; margin-top: -28px;">
+         Vendor Registration Successful !!
+        </div>
+        <div id="registerFailure" class="alert alert-danger" style="display:none;  margin-top: -28px;">
+         Vendor Registration not Successful
+        </div>
       </div>
 
     </div>
