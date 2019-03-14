@@ -2348,8 +2348,8 @@ input[type="search"] {
 .img-rounded {
   border-radius: 30px 0 0 30px;
   margin-left: -15px;
-  height: 375px;
-  width: 221px;
+  height: 365.7px;
+  width: 235px;
 }
 
 .MembersLogin {
@@ -2521,7 +2521,7 @@ input[type="search"] {
   border: 2px solid #cfb65e;
   padding: 20px;
   width: 520px;
-  height: 445px;
+  height: 460px;
   background: #fff;
   margin: -22px -16px;
 }
@@ -2544,13 +2544,13 @@ input[type="search"] {
 .img-roundedSignIn {
   margin-top: -22px;
   margin-left: -37px;
-  height: 445px;
-  width: 248px;
+  height: 460px;
+  width: 258px;
   border-radius: 30px 0 0 30px;
 }
 
 .MembersSignIn {
-  margin-top: -43px;
+  margin-top: -57px;
   margin-left: -2px;
 }
 
@@ -2567,8 +2567,8 @@ input[type="search"] {
   .img-roundedSignIn {
     border-radius: 6px;
     margin-top: -22px;
-    margin-left: -37px;
-    height: 471px;
+    margin-left: -36px;
+    height: 468px;
     width: 100px;
   }
 
@@ -2589,6 +2589,20 @@ input[type="search"] {
     padding: 20px;
     width: 328px;
     height: 470px;
+  }
+  .alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    width: 216px;
+    margin-left: 20px;
+  }
+  .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    width: 216px;
+    margin-left: 20px;
   }
 }
 
@@ -2933,6 +2947,7 @@ input[type="search"] {
   color: black;
   background-color: #fff;
   background-image: none;
+  border: 1px solid #cfb65e;
   //border: 1px solid #cfb65e;
   //border-radius: 4px;
   //-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -4201,7 +4216,7 @@ input[type="search"] {
 }
 
 #loginModal {
-  height: 375px;
+  height: 366px;
 }
 
 #registerModal {
@@ -4475,7 +4490,6 @@ textarea.form-control {
     .borderleft {
       border-left: none;
       border-top: 2px solid #eee;
-      width: auto;
     }
 
     textarea.form-control {
