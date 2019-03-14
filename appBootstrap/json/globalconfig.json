@@ -26,7 +26,8 @@
     "myorders": "https://mobfix.co.in/api/Order/GetemailOrder",
     "insertorder": "https://mobfix.co.in/api/Order/InsertOrderDetails",
     "getuserDetails": "https://mobfix.co.in/api/user/getuserDetails",
-    "status": "https://mobfix.co.in/api/OrderStatus/GetOrderStatus"
+    "status": "https://mobfix.co.in/api/OrderStatus/GetOrderStatus",
+    "contactformDetails":"https://mobfix.co.in/zmailer.php"
   },
   "data": {
 

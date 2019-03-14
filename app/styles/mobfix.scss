@@ -4963,3 +4963,13 @@ textarea.form-control {
     width: 26px;
     height: 26px;
   }
+  .couponApply{
+    color: #00f;
+    cursor: pointer;
+  }
+  .couponFailure {
+    color: red;
+}
+.couponSuccess {
+  color: green;
+}

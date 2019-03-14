@@ -319,15 +319,15 @@
           <p class="color">Let us know !</p>
         </div>
         <div class="col-md-8 col-sm-7 col-xs-12 form-style">
-          <form class="form-horizontal" name="myForm">
+       
             <div class="form-group">
               <div class="col-sm-6 makeconright">
-                <input type="text" name="firstName" id="firstName" ng-model="vm.UserType" class="form-control" placeholder="First name" required />
+                <input type="text" name="firstName" id="firstName" ng-model="vm.firstName" class="form-control" placeholder="First name" required />
                 <span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block" style="display:none;">First name is required</span>
 
               </div>
               <div class="col-sm-6 makeconleft">
-                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" ng-model="vm.userData.LastName" title="enter your last name if any." required />
+                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" ng-model="vm.last_name" title="enter your last name if any." required />
 
                 <span ng-show="form.lastName.$dirty && form.lastName.$error.required" class="help-block" style="display:none;">Last name is required</span>
               </div>
@@ -335,7 +335,7 @@
             <div class="form-group">
               <div class="col-sm-6 makeconright">
                 <input type="number" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any."
-                       ng-model="vm.ContactNumber" ng-pattern="/^[7-9][0-9]{9}$/" required />
+                       ng-model="vm.phone" ng-pattern="/^[7-9][0-9]{9}$/" required />
 
                 <div ng-messages="myform.phone.$error">
                   <!--<div ng-messages="form.phone.$error.minlength">
@@ -347,22 +347,31 @@
                 </div>
               </div>
               <div class="col-sm-6 makeconleft">
-                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." ng-model="vm.userData.LoginId" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." ng-model="vm.email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;" required>
 
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-12">
-                <textarea id="feedback" name="feedback" class="form-control textarea" placeholder="Enter your feedback..." rows="5" ng-model="vm.message" required></textarea>
+                <textarea id="feedback" name="feedback" class="form-control textarea" placeholder="Enter your feedback..." rows="5" ng-model="vm.feedback" required></textarea>
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-12 formbtn">
-                <button type="submit" name="SaveChanges" id="SaveChanges" value="Submit" class="btn subscribebutton" ng-click="submitted">Send to Us</button>
+
+                <button type="submit" name="SaveChanges" id="SaveChanges" value="Submit" class="btn subscribebutton" ng-click="vm.contactus()">Send to us</button>
+                <div class="alert alert-success m-t-20" id="contactSuccess" style="display: none;">
+                  <strong>Success!</strong> We will get you back with your queries ASAP...!
+                </div>
+                <div class="alert alert-warning m-t-20" id="contactFailure" style="display: block;">
+                  <strong>Warning!</strong> Feedback not Sent.
+                </div>
+
               </div>
             </div>
-          </form>
+      
         </div>
+       
         <div class="col-md-4 col-sm-5 col-xs-12 reach">
           <div class="reach">
             <h3 class="reachh3">REACH US</h3>
@@ -388,6 +397,7 @@
                 </li>
               </ul>
             </div>
+         
             <ul class="footer-social-icons2 footer-social-icons3">
               <li>
                 <a href="http://www.facebook.com/MobFixIndia" target="_blank">
