@@ -102,7 +102,7 @@ angular
       parent: DASHBOARD_STATE_NAME,
       templateUrl: "views/home.html",
       controller: 'homeCtrl',
-      controllerAs: 'home',
+      controllerAs: 'vm',
       data: {
         requireLogin: false
       }

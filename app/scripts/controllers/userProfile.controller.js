@@ -14,12 +14,28 @@
     $("#updateFailure").hide();
 
 
-    function getuserDetails() {      vm.profileCred = {        custvendAdminID: vm.userData.custvendAdminID      }      httpDataService.getuserDetails(vm.profileCred).then(function (resposeObj) {        if (resposeObj.status == 200) {          $rootScope.userData = resposeObj.data;          localStorage.setItem("currentUser", JSON.stringify(resposeObj.data));        } else if (resposeObj.status == 404) {        }      });    }
+    function getuserDetails() {
+      vm.profileCred = {
+        custvendAdminID: vm.userData.custvendAdminID
+      }
+      httpDataService.getuserDetails(vm.profileCred).then(function (resposeObj) {
+        if (resposeObj.status == 200) {
+          $rootScope.userData = resposeObj.data;
+          localStorage.setItem("currentUser", JSON.stringify(resposeObj.data));
+        } else if (resposeObj.status == 404) {
 
+        }
+      });
+    }
 
+  
+
+function editProfile(){
+$("#registrationForm input").attr("disabled",false);
+}
 
 function userProfile() {
-  //$("#registrationForm input").attr("disabled",false);
+  
   vm.userProfileCred = {
 
     custvendAdminID: vm.userData.custvendAdminID,
@@ -76,8 +92,8 @@ function userProfile() {
   }
     vm.userProfile = userProfile;
     vm.getuserDetails = getuserDetails;
-  //vm.edituserProfile=edituserProfile
   vm.userData= $rootScope.userData[0];
+  vm.editProfile=editProfile;
 }
 
   angular.module('mobifixApp')

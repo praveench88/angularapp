@@ -102,7 +102,12 @@
       var url = apiUrls.getuserDetails;
       return httpRequestWrapper.post(url, userData, null, null, true);
     }
-
+    function contactus(userData) {
+      var header={ 'Content-Type': 'application/x-www-form-urlencoded' };
+      var url = apiUrls.contactformDetails;
+      return httpRequestWrapper.post(url, userData, null, header, true);
+    }
+    
 
     function logout (userData) {
       var url = apiUrls.logout;
@@ -128,7 +133,8 @@
       myorders: myorders,
       status: status,
       allmobiletypes: allmobiletypes,
-      insertorder: insertorder
+      insertorder: insertorder,
+      contactus:contactus
 
     };
   }

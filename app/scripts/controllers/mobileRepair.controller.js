@@ -191,12 +191,14 @@
 
     function couponValidation() {
       if (vm.finalcoupon == "Launch Special" || vm.finalcoupon == "LaunchSpecial" || vm.finalcoupon == "launchspecial" || vm.finalcoupon == "LAUNCHSPECIAL") {
-        $('#couponSuccess').show()
+        $('#couponSuccess').show();
+        $('#couponFailure').hide();
         vm.finaldiscount = vm.totalprice * .30;
         vm.grandtotal = vm.totalprice - vm.finaldiscount;
       }
       else {
-        $('#couponFailure').show()
+        $('#couponFailure').show();
+        $('#couponSuccess').hide();
       }
 
     }
@@ -221,7 +223,7 @@
 
       vm.phoneissueid;
       vm.phoneissues;
-      vm.totalprice;
+      vm.grandtotal=vm.totalprice;
       //vm.mobilemodel;
 
 

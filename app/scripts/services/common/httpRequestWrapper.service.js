@@ -4,7 +4,7 @@
 
   function httpRequestWrapperConstructor($http){
 
-    function createRequestObject(method, url, data, query, header, authRequired) {
+    function createRequestObject(method, url, data, query, headers, authRequired) {
       var requestObject={};
 
         requestObject.method = method;
@@ -27,8 +27,8 @@
           }
         }
 
-        if(header) {
-          requestObject.headers=header;
+        if(headers) {
+          requestObject.headers=headers;
         }
 
         if(authRequired) {
@@ -40,37 +40,37 @@
     }
 
 
-    function post(url,data,query,header,authRequired){
+    function post(url,data,query,headers,authRequired){
 
-        var requestObject = createRequestObject('POST', url, data, query, header, authRequired);
+        var requestObject = createRequestObject('POST', url, data, query, headers, authRequired);
         return $http(requestObject);
 
     }
 
 
-    function put(url,data,query,header,authRequired){
+    function put(url,data,query,headers,authRequired){
 
-        var requestObject = createRequestObject('PUT', url, data, query, header, authRequired);
+        var requestObject = createRequestObject('PUT', url, data, query, headers, authRequired);
       return $http(requestObject);
     }
 
 
-    function get(url,query,header,authRequired){
+    function get(url,query,headers,authRequired){
 
-        var requestObject = createRequestObject('GET', url, undefined, query, header, authRequired);
+        var requestObject = createRequestObject('GET', url, undefined, query, headers, authRequired);
         return $http(requestObject);
     }
 
 
-    function deleteRequest(url,query,header,authRequired){
+    function deleteRequest(url,query,headers,authRequired){
 
         var data = '';
-        if(!header) {
-          header = {"content-Type": "application/json"};
+        if(!headers) {
+          headers = {"content-Type": "application/json"};
         } else {
-          header["content-Type"] = "application/json"
+          headers["content-Type"] = "application/json"
         }
-        var requestObject = createRequestObject('DELETE', url, data, query, header, authRequired);
+        var requestObject = createRequestObject('DELETE', url, data, query, headers, authRequired);
         return $http(requestObject);
     }
 
