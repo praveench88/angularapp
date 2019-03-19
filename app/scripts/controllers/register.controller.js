@@ -84,6 +84,9 @@
            $('#registerFailure').css("display","block");
             $rootScope.userData = resposeObj.data;
           }
+          else if (resposeObj.status == 500) {
+            $('#registerFailuremsg').css("display","block").html(resposeObj.data.ExceptionMessage);
+          }
         });
       }
       vm.register = register;

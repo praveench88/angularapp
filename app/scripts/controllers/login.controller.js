@@ -64,6 +64,7 @@
             });
         }
 
+
         vm.login = login;
         vm.openRegisterModal = openRegisterModal;
         vm.openResetPasswordModal = openResetPasswordModal;

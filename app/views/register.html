@@ -1,4 +1,15 @@
 <div class="container-fluid" id="registerModal">
+
+    <div id="registerSuccess" class="alert alert-success" style="display:none; margin-top: -8%;width:100%;z-index:1000;position: absolute">
+        Registration Successful !!
+      </div>
+      <div id="registerFailure" class="alert alert-danger" style="display:none; margin-top: -8%;width:100%;z-index:1000;position: absolute">
+        Registration not Successful
+      </div>
+
+      <div id="registerFailuremsg" class="alert alert-danger" style="display:none; margin-top: -8%;width:100%;z-index:1000;position: absolute">
+          Registration not Successful
+        </div>
   <div class="container RSPContainer">
     <div class="row" id="SignInrcorners">
 
@@ -9,7 +20,7 @@
       <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 MembersSignIn">
         <h3 class="title">Register</h3>
 
-
+     
         <form class="box SignInformbox" name="myForm" id="registrationForm">
           <!--form [formGroup]="registerForm" (ngSubmit)="onSubmit()">-->
           <!-- <div class="inner-addon left-addon inputbox col">
@@ -109,13 +120,12 @@
           </div>
           <!-- Footer Elements -->
         </form>
-        <div id="registerSuccess" class="alert alert-success" style="display:none; margin-top: -28px;">
-          Registration Successful !!
-        </div>
-        <div id="registerFailure" class="alert alert-danger" style="display:none;  margin-top: -28px;">
-          Registration not Successful
-        </div>
+       
+
+        
       </div>
+
+
 
     </div>
   </div>

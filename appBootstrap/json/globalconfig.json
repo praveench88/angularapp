@@ -27,7 +27,10 @@
     "insertorder": "https://mobfix.co.in/api/Order/InsertOrderDetails",
     "getuserDetails": "https://mobfix.co.in/api/user/getuserDetails",
     "status": "https://mobfix.co.in/api/OrderStatus/GetOrderStatus",
-    "contactformDetails":"https://mobfix.co.in/zmailer.php"
+    "contactformDetails":"https://mobfix.co.in/zmailer.php",
+    "resetPassword":"https://mobfix.co.in/api/user/resetPassword",
+    "passwordresetsendEmail":"https://mobfix.co.in/passwordresetEmail.php"
+
   },
   "data": {
 

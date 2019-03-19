@@ -4973,3 +4973,9 @@ textarea.form-control {
 .couponSuccess {
   color: green;
 }
+#resetSuccess,#resetFailure{
+  display: none;
+  position: absolute;
+    top: -25%;
+    right: 15%;
+}
