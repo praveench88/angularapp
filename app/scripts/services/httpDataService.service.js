@@ -33,6 +33,18 @@
       var url = apiUrls.login;
       return httpRequestWrapper.post(url,userData,null, null, true);
     }
+    function passwordresetEmail (userData) {
+      var url = apiUrls.resetPassword;
+      return httpRequestWrapper.post(url,userData,null, null, true);
+    }
+    function passwordresetsendEmail (userData) {
+      var url = apiUrls.passwordresetsendEmail;
+      return httpRequestWrapper.post(url,userData,null, null, true);
+    }
+    
+
+   
+
     function allOrders(){
       var url = apiUrls.allOrders;
       return httpRequestWrapper.get(url,null, null, true);
@@ -134,7 +146,9 @@
       status: status,
       allmobiletypes: allmobiletypes,
       insertorder: insertorder,
-      contactus:contactus
+      contactus:contactus,
+      passwordresetEmail:passwordresetEmail,
+      passwordresetsendEmail :passwordresetsendEmail 
 
     };
   }
